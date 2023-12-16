@@ -7,11 +7,22 @@
   src: url(./../assets/fonts/bokonique/Bokonique-Regular.otf);
 }
 
-/* Navbar */
+html,
+body {
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  /* height: 100vh; */
+  overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 100vh;
+}
+
+/* **Navbar */
 .container_nav {
-  margin-top: 69px;
-  margin-left: 100px;
-  margin-right: 75px;
+  margin: 69px 75px auto 100px;
 }
 
 /* logo */
@@ -139,8 +150,9 @@
   border-radius: 40px;
   justify-content: space-evenly;
   margin: 15px 12px;
-  padding-right: 32px;
-  padding-left: 5px;
+  width: 1278px;
+  /* padding-right: 0px;
+  padding-left: 2px; */
   background-color: #000000;
 }
 .tour_tab {
@@ -167,4 +179,57 @@
   position: absolute;
   left: 15%;
   bottom: 0;
+}
+
+/* **Footer */
+.footer_container {
+  background-color: #000000;
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+}
+.wrapper_footer {
+  color: antiquewhite;
+  margin: 31px 120px 70px;
+  border: #c78d2f 1px solid;
+}
+/* Footer Links */
+.footer_links {
+}
+
+/* Footer Bottom section */
+.footer_bottom_part {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+/* Footer Social Media */
+.footer_social_media_wrapper {
+  width: 590px;
+  height: 250px;
+  background-color: #272525;
+}
+
+/* footer_social_media_txt */
+.footer_social_media_txt {
+  font-family: bokonique;
+  color: #c78d2f;
+  font-size: 37px;
+  letter-spacing: 1.4px;
+  text-align: center;
+  margin-top: 20px;
+}
+
+/* Footer Copy Right */
+.footer_copy_right {
+  display: flex;
+  flex-direction: row;
+  font-family: bokonique;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: lighter !important;
+  letter-spacing: 0.6px;
+  margin-right: 16px;
+  margin-bottom: 4px;
 }
