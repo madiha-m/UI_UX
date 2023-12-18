@@ -194,7 +194,7 @@ body {
 }
 /* Footer Links */
 
-.footer_links {
+.footer_wrapper_links {
   display: flex;
   flex-direction: row;
   font-family: bokonique;
@@ -204,10 +204,20 @@ body {
   margin-top: 0;
 }
 
+/* footer_links */
+.footer_links {
+  list-style-type: none;
+  margin-top: 0px;
+}
+.footer_links > li:hover {
+  color: #c78d2f;
+}
+
 .footer_link_txt > ul {
   display: flex;
   flex-direction: column;
 }
+
 /* Footer Bottom section */
 .footer_bottom_part {
   display: flex;
