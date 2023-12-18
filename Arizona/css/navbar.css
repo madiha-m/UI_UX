@@ -273,3 +273,44 @@ body {
   letter-spacing: 0.6px;
   margin-right: 16px;
 }
+
+/* **Private Tours */
+.container_private_tours {
+  margin: 29px 75px 40px 100px;
+  font-family: bokonique;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.wrapper_private_tours {
+  text-align: center;
+  margin: 44px;
+}
+.title_private_tours {
+  font-size: 35px;
+  font-weight: 600;
+  color: #000000;
+}
+.txt_private_tours {
+  font-size: 26px;
+  /* font-weight: 600; */
+  color: #c78d2f;
+  margin-top: 68px;
+}
+.btn_wrapper_private_tours {
+  margin-top: 18px;
+  /* height: 20px;
+  width: 90px; */
+}
+.btn_private_tours {
+  border: none;
+  padding: 18px 10px;
+  text-align: center;
+  text-decoration: none;
+  /* display: inline-block; */
+  font-size: 24px;
+  font-weight: 400;
+  color: #ffffff;
+  background-color: black;
+  cursor: pointer;
+}
