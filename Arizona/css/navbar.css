@@ -279,6 +279,11 @@ body {
   margin: 29px 75px 40px 100px;
   font-family: bokonique;
   display: flex;
+  flex-direction: column;
+  /* justify-content: space-between; */
+}
+.wrapper_section_private_tours {
+  display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
@@ -293,22 +298,25 @@ body {
 }
 .txt_private_tours {
   font-size: 26px;
-  /* font-weight: 600; */
+  /* font-weight: 500; */
   color: #c78d2f;
-  margin-top: 68px;
+  margin: 68px 155px auto 176px;
+  text-align: start;
+  word-wrap: break-word;
+  width: 530px;
 }
 .btn_wrapper_private_tours {
-  margin-top: 18px;
+  margin-top: 17px;
   /* height: 20px;
   width: 90px; */
 }
 .btn_private_tours {
   border: none;
-  padding: 18px 10px;
+  padding: 14px 10px;
   text-align: center;
   text-decoration: none;
   /* display: inline-block; */
-  font-size: 24px;
+  font-size: 23px;
   font-weight: 400;
   color: #ffffff;
   background-color: black;
