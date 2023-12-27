@@ -1,6 +1,34 @@
+@font-face {
+  font-family: MochiyPopPOne;
+  src: url(./../assets/fonts/MochiyPopPOne-Regular.ttf);
+}
+@font-face {
+  font-family: bokonique;
+  src: url(./../assets/fonts/bokonique/Bokonique-Regular.otf);
+}
+
 :root {
   --radio-border-color: #000000;
   --radio-checked-color: #c78d2f;
   --radio-hover-color: #c78d2f;
   --radio-disabled-bg-color: #909090;
+  --aqua: #00b7bb;
+}
+.font_family {
+  --mochiyPopPOne: MochiyPopPOne;
+  --bokonique: bokonique;
+}
+
+/* Colors */
+.color-primary {
+  color: #c78d2f;
+}
+.color-secondary {
+  color: #00b7bb;
+}
+.color-black {
+  color: #000000;
+}
+.color-white {
+  color: #ffffff;
 }

@@ -1,3 +1,5 @@
+@import "index.css";
+
 @font-face {
   font-family: MochiyPopPOne;
   src: url(./../assets/fonts/MochiyPopPOne-Regular.ttf);
@@ -55,7 +57,7 @@
   align-items: center;
   width: 110px;
   height: 110px;
-  background-color: #00b7bb;
+  background-color: var(--aqua);
   border-radius: 50%;
   float: 1;
 }
@@ -103,7 +105,7 @@
   width: 50%;
   display: flex;
   flex-wrap: wrap;
-  column-gap: 13%;
+  column-gap: 14px;
   row-gap: 30px;
 }
 .wrapper_rbtn_group {
