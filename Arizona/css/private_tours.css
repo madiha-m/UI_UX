@@ -1,0 +1,134 @@
+@font-face {
+  font-family: MochiyPopPOne;
+  src: url(./../assets/fonts/MochiyPopPOne-Regular.ttf);
+}
+@font-face {
+  font-family: bokonique;
+  src: url(./../assets/fonts/bokonique/Bokonique-Regular.otf);
+}
+
+/* **Private Tours */
+.container_private_tours {
+  margin: 40px 100px 40px 118px;
+  font-family: bokonique;
+  display: flex;
+  flex-direction: column;
+}
+.wrapper_private_tours {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.wrapper_pt1 {
+  margin-bottom: 55px;
+}
+.wrapper_pt2 {
+  margin-bottom: 55px;
+}
+
+/* Image Private Tour  */
+.img_private_tour1 {
+  margin-right: 30px;
+}
+.img_private_tour2 {
+  margin-left: -12px;
+}
+.img_private_tour3 {
+  margin-right: 33px;
+}
+
+/* each text content styling */
+.wrapper_content_private_tour {
+  flex: 1;
+  text-align: center;
+}
+.wrapper_c_pt1,
+.wrapper_c_pt2 {
+  margin-top: 44px;
+}
+.wrapper_c_pt3 {
+  margin-top: 59px;
+}
+.wrapper_title_private_tour {
+  display: flex;
+  font-size: 35px;
+  font-weight: 900;
+  letter-spacing: 2.1px;
+  color: #000000;
+}
+.wrapper_title_pt1 {
+  justify-content: flex-start;
+  text-align: left;
+}
+.wrapper_title_pt2 {
+  justify-content: center;
+  text-align: center;
+}
+.wrapper_title_pt3 {
+  justify-content: center;
+  text-align: left;
+}
+.title_private_tour3 {
+  width: 65%;
+}
+.wrapper_txt_private_tour {
+  display: flex;
+  text-align: left;
+}
+.wrapper_txt_pt1 {
+  justify-content: center;
+}
+.wrapper_txt_pt2 {
+  justify-content: flex-end;
+  margin-top: 35px;
+}
+.wrapper_txt_pt3 {
+  justify-content: flex-start;
+  margin-top: 35px;
+}
+
+.txt_private_tour {
+  font-size: 23px;
+  font-weight: 600;
+  letter-spacing: 1.5px;
+  word-spacing: 1px;
+  word-wrap: break-word;
+  color: #c78d2f;
+}
+
+.txt_pt1 {
+  width: 74%;
+}
+.txt_pt2 {
+  width: 97%;
+}
+.txt_pt3 {
+  width: 90%;
+  margin-left: 43px;
+}
+
+/* Button Read More */
+.wrapper_btn_private_tour {
+  display: flex;
+  justify-content: center;
+  margin-top: 23px;
+}
+.wrapper_btn_pt1,
+.wrapper_btn_pt3 {
+  text-align: left;
+}
+.wrapper_btn_pt2 {
+  text-align: center;
+}
+.btn_private_tour {
+  border: none;
+  padding: 14px 23px;
+  letter-spacing: 0.3px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 23px;
+  font-weight: 100;
+  color: #ffffff;
+  background-color: black;
+  cursor: pointer;
+}

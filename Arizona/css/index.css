@@ -1,0 +1,6 @@
+:root {
+  --radio-border-color: #000000;
+  --radio-checked-color: #c78d2f;
+  --radio-hover-color: #c78d2f;
+  --radio-disabled-bg-color: #909090;
+}

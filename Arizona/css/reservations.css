@@ -1,0 +1,173 @@
+@font-face {
+  font-family: MochiyPopPOne;
+  src: url(./../assets/fonts/MochiyPopPOne-Regular.ttf);
+}
+@font-face {
+  font-family: bokonique;
+  src: url(./../assets/fonts/bokonique/Bokonique-Regular.otf);
+}
+
+/* **Reservations */
+.container_reservations {
+  margin: 40px 100px 40px 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+.wrapper_title_reservations {
+  display: flex;
+  flex-direction: center;
+  justify-content: center;
+}
+.title_reservations {
+  display: flex;
+  justify-content: center;
+  font-family: bokonique;
+  font-size: 70px;
+  font-weight: 700;
+  letter-spacing: 5px;
+  color: #c78d2f;
+}
+
+/* Facilities */
+.wrapper_facilities {
+  display: flex;
+  padding: 45px 0px;
+}
+.inner_wrapper_facilities {
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  text-align: center;
+  gap: 124px;
+}
+.inner_wrapper_facility {
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+.circle_icon_facility {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 110px;
+  height: 110px;
+  background-color: #00b7bb;
+  border-radius: 50%;
+  float: 1;
+}
+.circle_icon_facility:hover,
+.circle_icon_facility:active {
+  background-color: #c78d2f;
+}
+.label_facility {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  font-family: bokonique;
+  font-size: 28px;
+  letter-spacing: 0.9px;
+  color: #000000;
+}
+
+/* Title Vacation Type */
+.wrapper_title_vacation_type {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.title_vacation_type {
+  flex: 1;
+  flex-wrap: nowrap;
+  font-family: bokonique;
+  font-size: 30px;
+  letter-spacing: 0.8px;
+}
+
+/*Radio Buttons Vacation Type */
+:root {
+  --radio-border-color: #000000;
+  --radio-checked-color: #c78d2f;
+  --radio-hover-color: #c78d2f;
+  --radio-disabled-bg-color: #909090;
+}
+.wrapper_vacation_types {
+  display: flex;
+  justify-content: center;
+}
+.inner_wrapper_vacation_types {
+  width: 50%;
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 13%;
+  row-gap: 30px;
+}
+.wrapper_rbtn_group {
+  display: flex;
+  flex-direction: row;
+  flex: 1;
+  column-gap: 4%;
+}
+.wrapper_rbtn_lbl {
+  box-sizing: border-box;
+  align-self: center;
+  font-family: bokonique;
+  font-size: 29px;
+  letter-spacing: 0.9px;
+  color: #000000;
+}
+
+.rbtn_field[type="radio"] {
+  box-sizing: border-box;
+  width: 54px;
+  height: 54px;
+  border: 6px solid var(--radio-border-color);
+  border-radius: 50%;
+  appearance: none;
+  background-color: transparent;
+  outline: none;
+  cursor: pointer;
+
+  /* + transition: outline 0.1s; */
+}
+
+.rbtn_field[type="radio"]:not(:disabled):checked {
+  border-color: var(--radio-border-color);
+  background-color: var(--radio-checked-color);
+  background-clip: content-box;
+  padding: 11px;
+  background-image: radial-gradient(
+    circle,
+    var(--radio-checked-color) 0%,
+    var(--radio-checked-color) 30%,
+    transparent 60%,
+    transparent 100%
+  );
+}
+.rbtn_field[type="radio"]:disabled {
+  background-color: var(--radio-disabled-bg-color);
+}
+
+/* Search Button */
+.wrapper_btn_search {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin: 30px auto;
+}
+.btn_search {
+  border: none;
+  padding: 34px 127px;
+  border-radius: 13px;
+  letter-spacing: 0.3px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 32px;
+  color: #ffffff;
+  background-color: #c78d2f;
+  cursor: pointer;
+}
