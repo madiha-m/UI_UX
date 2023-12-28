@@ -29,7 +29,7 @@
   font-size: 70px;
   font-weight: 700;
   letter-spacing: 5px;
-  color: #c78d2f;
+  color: var(--color-primary);
 }
 
 /* Facilities */
@@ -63,7 +63,7 @@
 }
 .circle_icon_facility:hover,
 .circle_icon_facility:active {
-  background-color: #c78d2f;
+  background-color: var(--color-primary);
 }
 .label_facility {
   display: flex;
@@ -72,7 +72,7 @@
   font-family: bokonique;
   font-size: 28px;
   letter-spacing: 0.9px;
-  color: #000000;
+  color: var(--color-black);
 }
 
 /* Title Vacation Type */
@@ -92,9 +92,9 @@
 
 /*Radio Buttons Vacation Type */
 :root {
-  --radio-border-color: #000000;
-  --radio-checked-color: #c78d2f;
-  --radio-hover-color: #c78d2f;
+  --radio-border-color: var(--color-black);
+  --radio-checked-color: var(--color-primary);
+  --radio-hover-color: var(--color-primary);
   --radio-disabled-bg-color: #909090;
 }
 .wrapper_vacation_types {
@@ -102,10 +102,9 @@
   justify-content: center;
 }
 .inner_wrapper_vacation_types {
-  width: 50%;
-  display: flex;
-  flex-wrap: wrap;
-  column-gap: 14px;
+  width: 58%;
+  display: grid;
+  grid-template-columns: auto auto auto;
   row-gap: 30px;
 }
 .wrapper_rbtn_group {
@@ -113,6 +112,7 @@
   flex-direction: row;
   flex: 1;
   column-gap: 4%;
+  padding-left: 46px;
 }
 .wrapper_rbtn_lbl {
   box-sizing: border-box;
@@ -120,7 +120,7 @@
   font-family: bokonique;
   font-size: 29px;
   letter-spacing: 0.9px;
-  color: #000000;
+  color: var(--color-black);
 }
 
 .rbtn_field[type="radio"] {
@@ -169,7 +169,7 @@
   text-align: center;
   text-decoration: none;
   font-size: 32px;
-  color: #ffffff;
-  background-color: #c78d2f;
+  color: var(--color-white);
+  background-color: var(--color-primary);
   cursor: pointer;
 }

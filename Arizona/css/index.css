@@ -1,3 +1,17 @@
+:root {
+  --radio-border-color: #000000;
+  --radio-checked-color: #c78d2f;
+  --radio-hover-color: #c78d2f;
+  --radio-disabled-bg-color: #909090;
+  --color-primary: #c78d2f;
+  --color-secondary: #00b7bb;
+  --color-black: #000000;
+  --color-white: #ffffff;
+  --font-primary: bokonique;
+  --font-primary-bold: bokonique-bold;
+  --font-secondary: MochiyPopPOne;
+}
+
 @font-face {
   font-family: MochiyPopPOne;
   src: url(./../assets/fonts/MochiyPopPOne-Regular.ttf);
@@ -6,29 +20,34 @@
   font-family: bokonique;
   src: url(./../assets/fonts/bokonique/Bokonique-Regular.otf);
 }
-
-:root {
-  --radio-border-color: #000000;
-  --radio-checked-color: #c78d2f;
-  --radio-hover-color: #c78d2f;
-  --radio-disabled-bg-color: #909090;
-  --aqua: #00b7bb;
+@font-face {
+  font-family: bokonique-bold;
+  src: url(./../assets/fonts/bokonique/Bokonique-Bold.otf);
+  font-weight: bold;
+  font-style: normal;
 }
-.font_family {
-  --mochiyPopPOne: MochiyPopPOne;
-  --bokonique: bokonique;
+/* Fonts */
+.font-primary {
+  font-family: var(--font-primary);
+}
+.font-primary-bold {
+  font-family: ;
+  /* font-weight: 900; */
+}
+.font-secondary {
+  font-family: var(--font-secondary);
 }
 
 /* Colors */
 .color-primary {
-  color: #c78d2f;
+  color: var(--color-primary);
 }
 .color-secondary {
-  color: #00b7bb;
+  color: var(--color-secondary);
 }
 .color-black {
-  color: #000000;
+  color: var(--color-black);
 }
 .color-white {
-  color: #ffffff;
+  color: var(--color-white);
 }

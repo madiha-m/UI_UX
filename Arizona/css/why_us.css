@@ -1,42 +1,41 @@
 @import "index.css";
 
-/* @font-face {
-  font-family: MochiyPopPOne;
-  src: url(./../assets/fonts/MochiyPopPOne-Regular.ttf);
-}
-@font-face {
-  font-family: bokonique;
-  src: url(./../assets/fonts/bokonique/Bokonique-Regular.otf);
-} */
-
 .container_about_us {
-  border: #c78d2f 1px solid;
   margin: 40px auto;
   width: 100vw;
-  /* height: 500px; */
-  /* font-family: bokonique; */
   display: flex;
   background-image: url("./../assets/images/about_us.svg");
   background-repeat: no-repeat;
   background-size: cover;
-  background-color: #c78d2f;
+  background-color: var(--color-primary);
 }
 .wrapper_about_us {
-  /* border: 2px solid #000000; */
   width: 60%;
-  margin: 20% 30% 20% auto; /* Adjust left margin to 30% */
+  margin: 15% 36% 13% auto;
   display: flex;
   justify-content: center;
   align-items: left;
 }
 .wrapper_content_about_us {
   background-color: #ffffff;
-  height: 200px;
-  width: 500px;
-  border-radius: 23px;
-  padding: 80px;
+  height: 443px;
+  width: 747px;
+  border-radius: 35px;
+  padding: 74px 72px 60px 93px;
 }
 .title_about_us {
-  color: var(--aqua);
-  font-family: var();
+  font-family: var(--font-primary);
+  font-size: 58px;
+  font-weight: 900;
+  text-shadow: 1.3px 1.3px 1.3px var(--color-secondary);
+  color: var(--color-secondary);
+}
+.txt_about_us {
+  font-family: var(--font-primary);
+  font-size: 26px;
+  font-weight: 600;
+  letter-spacing: 1.3px;
+  line-height: 30px;
+  color: var(--color-black);
+  margin: 31px 54px 0px 2px;
 }
