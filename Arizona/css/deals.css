@@ -1,0 +1,35 @@
+.container_deals {
+  border: 2px solid rgb(98, 0, 255);
+  margin: 35px 100px;
+}
+.wrapper_deals {
+  border: 2px solid red;
+  margin: auto 33px;
+  display: grid;
+  grid-template-columns: auto auto;
+  /* grid-template-rows: auto auto; */
+  column-gap: 26px;
+  row-gap: 40px;
+}
+.wrapper_img_deal img {
+  border: 2px solid rgb(255, 204, 0);
+  width: 100%;
+}
+.wrapper_title_deal {
+  border: 2px solid rgb(0, 255, 238);
+  font-family: var(--font-primary);
+  font-size: 38px;
+  font-weight: 600;
+  letter-spacing: 2.3px;
+}
+.wrapper_desc_deal {
+  border: 2px solid rgb(0, 0, 255);
+  font-family: var(--font-primary);
+  font-size: 38px;
+  font-style: italic;
+  font-weight: 600;
+  letter-spacing: 2.3px;
+}
+.wrapper_details_deal {
+  border: 2px solid rgb(255, 0, 34);
+}

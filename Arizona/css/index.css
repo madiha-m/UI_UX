@@ -7,6 +7,8 @@
   --color-secondary: #00b7bb;
   --color-black: #000000;
   --color-white: #ffffff;
+  --color-red: #d00d0d;
+
   --font-primary: bokonique;
   --font-primary-bold: bokonique-bold;
   --font-secondary: MochiyPopPOne;
@@ -31,7 +33,7 @@
   font-family: var(--font-primary);
 }
 .font-primary-bold {
-  font-family: ;
+  font-family: var(--font-primary-bold);
   /* font-weight: 900; */
 }
 .font-secondary {
@@ -50,4 +52,7 @@
 }
 .color-white {
   color: var(--color-white);
+}
+.color-red {
+  color: var(--color-red);
 }
