@@ -8,6 +8,10 @@
   --color-black: #000000;
   --color-white: #ffffff;
   --color-red: #d00d0d;
+  --color-yellow: #ffb820;
+  --color-blue: #095699;
+  --color-dark-blue: #35474b;
+  --color-lime-green: #7cd424;
 
   --font-primary: bokonique;
   --font-primary-bold: bokonique-bold;
@@ -55,4 +59,16 @@
 }
 .color-red {
   color: var(--color-red);
+}
+.color-yellow {
+  color: var(--color-yellow);
+}
+.color-blue {
+  color: var(--color-blue);
+}
+.color-dark-blue {
+  color: var(--color-dark-blue);
+}
+.color-lime-green {
+  color: var(--color-lime-green);
 }
