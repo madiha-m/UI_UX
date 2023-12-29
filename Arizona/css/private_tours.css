@@ -1,16 +1,7 @@
-@font-face {
-  font-family: MochiyPopPOne;
-  src: url(./../assets/fonts/MochiyPopPOne-Regular.ttf);
-}
-@font-face {
-  font-family: bokonique;
-  src: url(./../assets/fonts/bokonique/Bokonique-Regular.otf);
-}
-
 /* **Private Tours */
 .container_private_tours {
   margin: 40px 100px 40px 118px;
-  font-family: bokonique;
+  font-family: var(--font-primary);
   display: flex;
   flex-direction: column;
 }
@@ -54,7 +45,7 @@
   font-size: 35px;
   font-weight: 900;
   letter-spacing: 2.1px;
-  color: #000000;
+  color: var(--color-black);
 }
 .wrapper_title_pt1 {
   justify-content: flex-start;
@@ -93,7 +84,7 @@
   letter-spacing: 1.5px;
   word-spacing: 1px;
   word-wrap: break-word;
-  color: #c78d2f;
+  color: var(--color-primary);
 }
 
 .txt_pt1 {
@@ -128,7 +119,7 @@
   text-decoration: none;
   font-size: 23px;
   font-weight: 100;
-  color: #ffffff;
+  color: var(--color-white);
   background-color: black;
   cursor: pointer;
 }

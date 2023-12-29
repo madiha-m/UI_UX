@@ -38,7 +38,6 @@
 }
 .font-primary-bold {
   font-family: var(--font-primary-bold);
-  /* font-weight: 900; */
 }
 .font-secondary {
   font-family: var(--font-secondary);
@@ -72,3 +71,7 @@
 .color-lime-green {
   color: var(--color-lime-green);
 }
+
+/* apply for all in index.css file  * {
+  box-sizing: border-box;
+} */
