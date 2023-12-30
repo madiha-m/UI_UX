@@ -139,6 +139,9 @@ section#hero {
   }
 
   .dropdown_menu {
+    display: none;
+  }
+  .dropdown_menu.open {
     display: block;
   }
 }
