@@ -1,0 +1,13 @@
+:root {
+  /* COLORS */
+  --color-primary: green;
+  --color-secondary: red;
+}
+
+/* COLORS */
+.color-primary {
+  color: var(--color-primary);
+}
+.color-secondary {
+  color: var(--color-secondary);
+}
