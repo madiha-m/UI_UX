@@ -81,25 +81,30 @@ body {
     content: "";
   }
 }
-@media (max-width: 375px) {
+@media (max-width: 320px) {
   .wrapper_title {
     font-size: 31px;
+  }
+  .wrapper_slogan {
+    font-size: smaller;
   }
 }
 
 /* MAIN */
 /* FLIP CARD */
 .wrapper_flip_card {
-  border: 2px solid green;
-  background-color: yellow;
+  /* border: 2px solid green; */
+  /* background-color: yellow; */
   /* perspective: 10000px; */
   width: 300px;
   height: 450px;
   margin: auto;
+  border-radius: 20px;
 }
 .inner_wrapper_flip_card {
-  border: 2px solid red;
-  background-color: rgb(217, 217, 227);
+  /* border: 3px solid var(--color-primary); */
+  /* border-radius: 20px; */
+  /* background-color: var(--color-primary); */
   width: 100%;
   height: 100%;
   transform-style: preserve-3d;
@@ -118,15 +123,46 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  border: 2px solid var(--color-primary);
+  border: 3px solid var(--color-primary);
+  border-radius: 25px;
 }
 .wrapper_flip_card_front {
-  background-color: blueviolet;
+  background-color: var(--color-white);
+}
+.wrapper_flip_card_front img {
+  width: 100%;
 }
 .wrapper_flip_card_back {
-  background-color: aquamarine;
+  background-color: var(--color-primary);
+
   transform: rotateY(180deg);
   z-index: 1;
+}
+
+@media (max-width: 425px) {
+  .container_filp_cards {
+    margin: 73px auto;
+  }
+  .wrapper_flip_card {
+    width: 266px;
+    height: 370px;
+  }
+  .wrapper_flip_card_front,
+  .wrapper_flip_card_back {
+    border: 2px solid var(--color-primary);
+  }
+}
+@media (max-width: 320px) {
+  .container_filp_cards {
+    margin: 55px auto;
+  }
+  .wrapper_flip_card {
+    width: 246px;
+    height: 350px;
+  }
+  .wrapper_flip_card_front img {
+    width: 98%;
+  }
 }
 
 /* 
