@@ -1,7 +1,34 @@
 :root {
+  /* FONTS */
+  --font-primary: sans-serif;
+  --font-secondary: "Rubik Lines";
   /* COLORS */
-  --color-primary: green;
-  --color-secondary: red;
+  --color-primary: #044367;
+  /* --color-secondary: red; */
+  --color-black: #000000;
+  --color-white: #ffffff;
+
+  /* SIZES */
+  --size_xsm: 10px;
+  --size_sm: 12px;
+  --size_med: 16px;
+  --size_l: 20px;
+  --size_xl: 24px;
+  --size_xxl: 44px;
+
+  /* TEXT */
+  --txt_xsm: 10px;
+  --txt_sm: 12px;
+  --txt_med: 16px;
+  --txt_l: 25px;
+  --txt_xl: 27px;
+  --txt_xxl: 33px;
+  --txt_xxxl: 44px;
+}
+
+/* FONTS */
+.font-primary {
+  font-family: var(--font-primary);
 }
 
 /* COLORS */
@@ -11,3 +38,7 @@
 .color-secondary {
   color: var(--color-secondary);
 }
+
+/* SIZES */
+/* .size-sm {
+} */
