@@ -82,29 +82,29 @@ body {
   }
 }
 @media (max-width: 320px) {
+  .container_header {
+    margin: 46px auto;
+  }
   .wrapper_title {
     font-size: 31px;
   }
   .wrapper_slogan {
     font-size: smaller;
+    /* font-weight: lighter; */
+    font-size: small;
   }
 }
 
 /* MAIN */
 /* FLIP CARD */
 .wrapper_flip_card {
-  /* border: 2px solid green; */
-  /* background-color: yellow; */
   /* perspective: 10000px; */
   width: 300px;
   height: 450px;
   margin: auto;
-  border-radius: 20px;
+  border-radius: 15px;
 }
 .inner_wrapper_flip_card {
-  /* border: 3px solid var(--color-primary); */
-  /* border-radius: 20px; */
-  /* background-color: var(--color-primary); */
   width: 100%;
   height: 100%;
   transform-style: preserve-3d;
@@ -114,6 +114,8 @@ body {
 .wrapper_flip_card:hover .inner_wrapper_flip_card {
   transform: rotateY(180deg);
 }
+
+/* Card Both Sides */
 .wrapper_flip_card_front,
 .wrapper_flip_card_back {
   width: 100%;
@@ -124,24 +126,23 @@ body {
   justify-content: center;
   align-items: center;
   border: 3px solid var(--color-primary);
-  border-radius: 25px;
+  border-radius: 15px;
 }
+
+/* Card Front Side */
 .wrapper_flip_card_front {
   background-color: var(--color-white);
 }
 .wrapper_flip_card_front img {
   width: 100%;
 }
-.wrapper_flip_card_back {
-  background-color: var(--color-primary);
-
-  transform: rotateY(180deg);
-  z-index: 1;
-}
 
 @media (max-width: 425px) {
   .container_filp_cards {
-    margin: 73px auto;
+    margin: 57px auto;
+    display: flex;
+    flex-direction: column;
+    gap: 29px;
   }
   .wrapper_flip_card {
     width: 266px;
@@ -150,104 +151,248 @@ body {
   .wrapper_flip_card_front,
   .wrapper_flip_card_back {
     border: 2px solid var(--color-primary);
+    width: 262px;
+    height: 366px;
+  }
+}
+@media (max-width: 375px) {
+  .container_filp_cards {
+    gap: 49px;
   }
 }
 @media (max-width: 320px) {
   .container_filp_cards {
-    margin: 55px auto;
+    margin: 52px auto;
+    gap: 47px;
   }
   .wrapper_flip_card {
     width: 246px;
     height: 350px;
+  }
+  .wrapper_flip_card_front,
+  .wrapper_flip_card_back {
+    border: 2px solid var(--color-primary);
+    width: 242px;
+    height: 346px;
   }
   .wrapper_flip_card_front img {
     width: 98%;
   }
 }
 
-/* 
-.container-flip-card {
+/* Card Back Side */
+.wrapper_flip_card_back {
+  background-color: var(--color-primary);
+  transform: rotateY(180deg);
+}
+.inner_wrapper_flip_card_back {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  color: var(--color-white);
+}
+.wrapper_img_flip_card {
+  text-align: center;
+}
+.wrapper_img_flip_card img {
+  width: 55%;
+  border: 1px solid var(--color-primary);
+  border-radius: 10px;
+}
+.wrapper_details_flip_card {
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+}
+.wrapper_name_flip_card {
+  font-size: medium;
+  font-weight: 600;
+  text-align: center;
+  letter-spacing: 1px;
+}
+.wrapper_spec_flip_card {
+  white-space: nowrap;
+  font-size: smaller;
+  letter-spacing: 0.5px;
+}
+.fa {
+  font-weight: 100;
+}
+.price_flip_card {
+  font-weight: 700;
+}
+.wrapper_btns_flip_card {
   display: flex;
   flex-direction: row;
-  flex-wrap: nowrap;
-  column-gap: 10px;
-  margin: 7% 10%;
+  justify-content: space-between;
 }
-
-.flip-card {
-  height: 450px;
-  width: 300px;
-  margin: auto;
-}
-.flip-card-back {
-  background-color: #044367;
-  color: #fff;
-  transform: rotateY(180deg);
-  z-index: 1;
-  border-radius: 30px;
-  padding: 12% 19%;
-  margin-left: -120px;
-}
-.flip-card-back .back-header {
-  height: 45%;
-  text-align: center;
-}
-.flip-card-back .back-header img {
-  width: 70%;
-  margin-top: 20px;
-}
-.flip-card-back img {
-  border-radius: 20px;
-}
-
-.flip-card-inner {
-  position: relative;
-  height: 100%;
-  transition: transform 0.6s;
-  transform-style: preserve-3d;
-}
-.flip-card-back,
-.flip-card-front {
-  position: absolute;
-  height: 100%;
-  width: 100%;
-  backface-visibility: hidden;
-}
-.flip-card-front {
-  border: 5px solid #044367;
-  padding: 20% 25% 0% 10%;
-  border-radius: 30px;
-}
-.flip-card-front img {
-  height: 80%;
-}
-.flip-card:hover .flip-card-inner {
-  transform: rotateY(180deg);
-}
-.flip-card-back .back-footer {
-  height: 55%;
-  padding: 0 15px;
-}
-.back-footer h2 {
-  margin-top: 50px;
-  white-space: nowrap;
-  text-align: center;
-}
-.back-footer a {
+.wrapper_btn_flip_card {
   text-decoration: none;
-  width: 120px;
+  width: 88px;
   display: inline-block;
   text-align: center;
-  padding: 7px 5px;
-  border: 1px solid #fff;
+  border: 2px solid var(--color-white);
   border-radius: 5px;
-  color: #fff;
-  margin-top: 30px;
+  padding: 3px 3px;
   transition: 0.5s;
+  cursor: pointer;
 }
-.back-footer a:hover {
-  background: #fff;
-  border: 1px solid #fff;
-  color: #044367;
+.wrapper_btn_flip_card button {
+  width: 100%;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  background: none;
+  border: none;
+  text-align: center;
+  color: var(--color-white);
+  background: none;
+  border: none;
+  text-align: center;
+}
+
+.wrapper_btn_flip_card:hover {
+  background: var(--color-white);
+  border: 2px solid var(--color-white);
   border-radius: 5px;
-} */
+}
+.wrapper_btn_flip_card:hover button {
+  background: none;
+  border: none;
+  font-weight: 700;
+  color: var(--color-primary);
+  cursor: pointer;
+}
+
+@media (max-width: 425px) {
+  .inner_wrapper_flip_card_back {
+    gap: 15px;
+  }
+  .wrapper_img_flip_card img {
+    width: 55%;
+    border: 1px solid var(--color-primary);
+    border-radius: 10px;
+  }
+  .wrapper_details_flip_card {
+    row-gap: 10px;
+  }
+  .wrapper_name_flip_card {
+    font-size: medium;
+    font-weight: 600;
+    letter-spacing: 1px;
+  }
+  .wrapper_spec_flip_card {
+    font-size: smaller;
+    letter-spacing: 0.5px;
+  }
+  .fa {
+    font-weight: 100;
+  }
+  .wrapper_btn_flip_card {
+    width: 88px;
+    border: 2px solid var(--color-white);
+    border-radius: 5px;
+    padding: 3px 3px;
+  }
+  .wrapper_btn_flip_card button {
+    font-size: 12px;
+    letter-spacing: 0.5px;
+  }
+  .wrapper_btn_flip_card:hover {
+    border: 2px solid var(--color-white);
+    border-radius: 5px;
+  }
+  .wrapper_btn_flip_card:hover button {
+    font-weight: 700;
+  }
+}
+
+@media (max-width: 768px) {
+  .inner_wrapper_flip_card_back {
+    gap: 15px;
+  }
+  .wrapper_img_flip_card img {
+    width: 55%;
+    border: 1px solid var(--color-primary);
+    border-radius: 10px;
+  }
+  .wrapper_details_flip_card {
+    row-gap: 10px;
+  }
+  .wrapper_name_flip_card {
+    font-size: medium;
+    font-weight: 600;
+    letter-spacing: 1px;
+  }
+  .wrapper_spec_flip_card {
+    font-size: smaller;
+    letter-spacing: 0.5px;
+  }
+  .fa {
+    font-weight: 100;
+  }
+  .wrapper_btn_flip_card {
+    width: 88px;
+    border: 2px solid var(--color-white);
+    border-radius: 5px;
+    padding: 3px 3px;
+  }
+  .wrapper_btn_flip_card button {
+    font-size: 12px;
+    letter-spacing: 0.5px;
+  }
+  .wrapper_btn_flip_card:hover {
+    border: 2px solid var(--color-white);
+    border-radius: 5px;
+  }
+  .wrapper_btn_flip_card:hover button {
+    font-weight: 700;
+  }
+}
+
+@media (max-width: 1440px) {
+  .inner_wrapper_flip_card_back {
+    gap: 15px;
+  }
+  .wrapper_img_flip_card img {
+    width: 55%;
+    border: 1px solid var(--color-primary);
+    border-radius: 10px;
+  }
+  .wrapper_details_flip_card {
+    row-gap: 10px;
+  }
+  .wrapper_name_flip_card {
+    font-size: medium;
+    font-weight: 600;
+    letter-spacing: 1px;
+  }
+  .wrapper_spec_flip_card {
+    font-size: smaller;
+    letter-spacing: 0.5px;
+  }
+  .fa {
+    font-weight: 100;
+  }
+  .wrapper_btn_flip_card {
+    width: 88px;
+    border: 2px solid var(--color-white);
+    border-radius: 5px;
+    padding: 3px 3px;
+  }
+  .wrapper_btn_flip_card button {
+    font-size: 12px;
+    letter-spacing: 0.5px;
+  }
+  .wrapper_btn_flip_card:hover {
+    border: 2px solid var(--color-white);
+    border-radius: 5px;
+  }
+  .wrapper_btn_flip_card:hover button {
+    font-weight: 700;
+  }
+}
