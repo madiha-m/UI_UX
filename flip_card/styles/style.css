@@ -8,7 +8,7 @@ body {
   box-sizing: border-box;
   max-width: 100vw;
   width: 100vw;
-  height: 100vh;
+  /* height: 100vh; */
   overflow-x: hidden;
 }
 
@@ -92,6 +92,54 @@ body {
     font-size: smaller;
     /* font-weight: lighter; */
     font-size: small;
+  }
+}
+
+/* FOOTER */
+.container_footer {
+  background-color: rgb(234, 59, 59);
+  width: 100vw;
+  margin-top: 100px;
+}
+.wrapper_copy_right {
+  width: 100%;
+}
+.inner_wrapper_copy_right {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin: 10px auto;
+  font-size: 11px;
+  font-weight: 700;
+  color: var(--color-primary);
+  background-color: var(--color-white);
+}
+.fa-copyright:before {
+  font-weight: 600;
+  font-size: 11px;
+  color: var(--color-primary);
+  margin-right: 2px;
+}
+.inner_wrapper_copy_right a {
+  color: red;
+  text-decoration: none;
+}
+
+@media (max-width: 320px) {
+  .container_footer {
+    margin-top: 100px;
+  }
+  .inner_wrapper_copy_right {
+    margin: 10px auto;
+  }
+}
+@media (max-width: 425px) and (min-width: 321px) {
+  .container_footer {
+    margin-top: 116px;
+  }
+  .inner_wrapper_copy_right {
+    margin: 17px auto;
   }
 }
 
@@ -219,7 +267,7 @@ body {
   font-size: smaller;
   letter-spacing: 0.5px;
 }
-.fa {
+.fa-usd:before {
   font-weight: 100;
 }
 .price_flip_card {
@@ -289,7 +337,7 @@ body {
     font-size: smaller;
     letter-spacing: 0.5px;
   }
-  .fa {
+  .fa-usd:before {
     font-weight: 100;
   }
   .wrapper_btn_flip_card {
@@ -332,7 +380,7 @@ body {
     font-size: smaller;
     letter-spacing: 0.5px;
   }
-  .fa {
+  .fa-usd:before {
     font-weight: 100;
   }
   .wrapper_btn_flip_card {
@@ -375,7 +423,7 @@ body {
     font-size: smaller;
     letter-spacing: 0.5px;
   }
-  .fa {
+  .fa-usd:before {
     font-weight: 100;
   }
   .wrapper_btn_flip_card {
