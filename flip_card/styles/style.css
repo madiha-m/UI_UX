@@ -10,6 +10,7 @@ body {
   width: 100vw;
   /* height: 100vh; */
   overflow-x: hidden;
+  min-height: 100vh;
 }
 
 @media (min-width: 793px) {
@@ -22,8 +23,8 @@ body {
     flex-direction: column;
   }
   main {
-    flex: 1;
-    overflow-y: auto;
+    /* flex: 1; */
+    /* overflow-y: auto; */
   }
   footer {
     margin-top: auto;
@@ -32,7 +33,11 @@ body {
 
 /* HEADER */
 .container_header {
-  margin: 46px auto;
+  padding: 20px;
+  width: 100%;
+  position: relative;
+  top: 0;
+  z-index: 99;
 }
 .wrapper_title_section {
   display: flex;
@@ -118,6 +123,9 @@ body {
 .container_footer {
   background-color: var(--color-white);
   width: 100vw;
+  position: static;
+  /* top: 0; */
+  /* z-index: 98; */
 }
 .wrapper_copy_right {
   width: 100%;
@@ -174,7 +182,7 @@ body {
 /* @media (max-width: 425px) and (min-width: 321px) { */
 @media (max-width: 598px) and (min-width: 321px) {
   .container_footer {
-    margin-top: 116px;
+    /* margin-top: 116px; */
   }
   .inner_wrapper_copy_right {
     margin: 17px auto;
@@ -182,7 +190,7 @@ body {
 }
 @media (max-width: 320px) {
   .container_footer {
-    margin-top: 100px;
+    /* margin-top: 100px; */
   }
   .inner_wrapper_copy_right {
     margin: 10px auto;
@@ -191,11 +199,14 @@ body {
 
 /* MAIN */
 /* FLIP CARD */
+.container_filp_cards {
+  align-items: center;
+  justify-content: center;
+  padding: 20px 30px;
+}
 .wrapper_flip_card {
-  /* perspective: 10000px; */
   width: 300px;
   height: 450px;
-  margin: auto;
   border-radius: 15px;
 }
 .inner_wrapper_flip_card {
@@ -207,25 +218,23 @@ body {
 
 .wrapper_flip_card:hover .inner_wrapper_flip_card {
   transform: rotateY(180deg);
+  transition: transform 2s ease-in-out;
 }
 
-/* @media (min-width: 427px) { */
+@media (min-width: 1024px) {
+  .container_filp_cards {
+    gap: 30px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
 @media (min-width: 793px) {
   .container_filp_cards {
     margin: auto 10%;
-    display: grid;
-    grid-template-columns: auto auto;
-    /* gap: 30px; */
-    grid-auto-flow: row;
   }
-  /* .wrapper_flip_card {
-    width: 266px;
-    height: 370px;
-  } */
 }
 @media (min-width: 1441px) {
   .container_filp_cards {
-    grid-template-columns: auto auto auto auto;
     gap: 30px;
   }
   .wrapper_flip_card {
@@ -233,21 +242,22 @@ body {
     height: 370px;
   }
 }
-@media (max-width: 1440px) and (min-width: 900px) {
+@media (max-width: 1440px) and (min-width: 1024px) {
   .container_filp_cards {
-    /* margin: 1% 1%; */
+    row-gap: 24px;
   }
   .wrapper_flip_card {
-    width: 69%;
-    /* height: 420px; */
-    /* margin: unset; */
+    width: 264px;
+    height: 357px;
   }
 }
-@media (max-width: 900px) and (min-width: 793px) {
+@media (max-width: 1023px) and (min-width: 793px) {
   .container_filp_cards {
+    display: grid;
     grid-template-columns: auto auto;
     row-gap: 24px;
-    margin: auto 14% 7%;
+    margin: 3% 14% 7%;
+    column-gap: 23px;
   }
   .wrapper_flip_card {
     width: 264px;
@@ -257,7 +267,7 @@ body {
 
 @media (max-width: 792px) and (min-width: 599px) {
   .container_filp_cards {
-    margin: 10% auto;
+    margin: 6% auto 15%;
     display: flex;
     flex-direction: column;
     gap: 46px;
@@ -309,7 +319,14 @@ body {
   border-radius: 15px;
 }
 
-@media (max-width: 900px) and (min-width: 793px) {
+@media (max-width: 1440px) and (min-width: 1024px) {
+  .wrapper_flip_card_front,
+  .wrapper_flip_card_back {
+    width: 97%;
+    height: 98%;
+  }
+}
+@media (max-width: 1023px) and (min-width: 793px) {
   .wrapper_flip_card_front,
   .wrapper_flip_card_back {
     width: 97%;
@@ -351,7 +368,7 @@ body {
   width: 100%;
 }
 
-@media (max-width: 900px) and (min-width: 793px) {
+@media (max-width: 1023px) and (min-width: 793px) {
   .wrapper_flip_card_front img {
     width: 84%;
   }
@@ -474,7 +491,6 @@ body {
   cursor: pointer;
 }
 
-/* @media (max-width: 425px) { */
 @media (max-width: 598px) {
   .inner_wrapper_flip_card_back {
     gap: 15px;
@@ -520,7 +536,6 @@ body {
 @media (max-width: 792px) and (min-width: 599px) {
   .inner_wrapper_flip_card_back {
     flex-direction: row;
-    /* justify-content: space-between; */
     gap: 15px;
   }
   .wrapper_img_flip_card {
@@ -570,7 +585,7 @@ body {
     font-weight: 700;
   }
 }
-@media (max-width: 900px) and (min-width: 793px) {
+@media (max-width: 1023px) and (min-width: 793px) {
   .inner_wrapper_flip_card_back {
     gap: 15px;
   }
@@ -612,7 +627,7 @@ body {
     font-weight: 700;
   }
 }
-@media (max-width: 1440px) and (min-width: 900px) {
+@media (max-width: 1440px) and (min-width: 1024px) {
   .inner_wrapper_flip_card_back {
     gap: 15px;
   }
