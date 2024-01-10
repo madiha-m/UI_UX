@@ -144,7 +144,7 @@ body {
 .fa-copyright {
   margin-bottom: 1px;
 }
-.fa-copyright:before {
+.fa-copyright::before {
   font-weight: 600;
   font-size: 9px;
   color: var(--color-primary);
@@ -163,7 +163,7 @@ body {
   .fa-copyright {
     margin-bottom: 3px;
   }
-  .fa-copyright:before {
+  .fa-copyright::before {
     font-size: 13px;
   }
 }
@@ -175,7 +175,7 @@ body {
   .fa-copyright {
     margin-bottom: 2px;
   }
-  .fa-copyright:before {
+  .fa-copyright::before {
     font-size: 10px;
   }
 }
@@ -442,7 +442,7 @@ body {
   font-size: smaller;
   letter-spacing: 0.5px;
 }
-.fa-usd:before {
+.fa-usd::before {
   font-weight: 100;
 }
 .price_flip_card {
@@ -512,7 +512,7 @@ body {
     font-size: smaller;
     letter-spacing: 0.5px;
   }
-  .fa-usd:before {
+  .fa-usd::before {
     font-weight: 100;
   }
   .wrapper_btn_flip_card {
@@ -561,7 +561,7 @@ body {
     font-size: smaller;
     letter-spacing: 0.5px;
   }
-  .fa-usd:before {
+  .fa-usd::before {
     font-weight: 100;
   }
   .wrapper_btns_flip_card {
@@ -606,7 +606,7 @@ body {
     font-size: smaller;
     letter-spacing: 0.5px;
   }
-  .fa-usd:before {
+  .fa-usd::before {
     font-weight: 100;
   }
   .wrapper_btn_flip_card {
@@ -648,7 +648,7 @@ body {
     font-size: smaller;
     letter-spacing: 0.5px;
   }
-  .fa-usd:before {
+  .fa-usd::before {
     font-weight: 100;
   }
   .wrapper_btn_flip_card {

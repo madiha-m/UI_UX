@@ -6,6 +6,31 @@
     <meta name="viewport"
           content="width=device-width, initial-scale=1.0">
     <title>Personal Portfolio</title>
+    <link rel="icon"
+          type="image/x-icon"
+          href="./assets/images/icons/logo.ico">
+
+    <!-- Font-family links -->
+    <link rel="preconnect"
+          href="https://fonts.googleapis.com">
+    <link rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@400;500;600;700&family=Concert+One&family=Mochiy+Pop+P+One&family=Poppins:ital,wght@0,400;0,500;0,600;1,300;1,400&family=Roboto+Condensed&family=Rubik+Lines&display=swap"
+          rel="stylesheet">
+    <link rel="preconnect"
+          href="https://fonts.googleapis.com">
+    <link rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@400;500;600;700&family=Concert+One&family=Mochiy+Pop+P+One&family=Poppins:ital,wght@0,400;0,500;0,600;1,300;1,400&family=Raleway&family=Roboto+Condensed&family=Rubik+Lines&display=swap"
+          rel="stylesheet">
+
+    <!-- Icon-library Link -->
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- Stylesheet Links -->
     <link rel="stylesheet"
           href="./styles/index.css">
     <link rel="stylesheet"
@@ -13,87 +38,146 @@
 </head>
 
 <body>
-    <section id="navbar">
-        <ul id="nav-lst">
-            <li>
-                <a href="#welcome-section">About</a>
-            </li>
-            <li>
-                <a href="#projects">Work</a>
-            </li>
-            <li>
-                <a href="#contact">Contact</a>
-            </li>
-        </ul>
-    </section>
-    <section id="welcome-section">
-        <h1>
-            Hey I am Madiha Muhammad
-        </h1>
-        <p>
-            a web developer
-        </p>
-    </section>
-    <section id="projects">
-        <div class="projects_title">
-            These are some of my projects
+
+    <!-- START NAV -->
+    <section id="navbar"
+             class="nav-section">
+        <div class="logo">
+            <img src="./assets/images/icons/logo.ico"
+                 alt="Madiha">
         </div>
-        <div class="project-tile">
-            <img src="" />
-            <a href="https://flip-card-uiux.netlify.app"
-               alt="Flip Card UI/UX Design">
-                Flip Card
-            </a>
-        </div>
-        <div class="project-tile">
-            <img src="" />
-            <a href="https://travel-app-uiux.netlify.app"
-               alt="Arizona Travel App UI/UX Design">
-                Arizona Travel App
-            </a>
+        <div class="navbar">
+            <ul id="nav-lst">
+                <li>
+                    <a href="#welcome-section">About</a>
+                </li>
+                <li>
+                    <a href="#projects">Work</a>
+                </li>
+                <li>
+                    <a href="#contact">Contact</a>
+                </li>
+            </ul>
         </div>
     </section>
-    <section id="contact">
-        <div class="inner_contact">
-            <div id="links">
-                <div class="inner_copy_right">
-                    <div id="profile-link">
-                        <a href="https://www.freecodecamp.org/madiha_muhammad"
-                           alt="freeCodeCamp"
-                           target="_blank">
-                            <svg xmlns="http://www.w3.org/2000/svg"
-                                 width="24"
-                                 height="24"
-                                 viewBox="0 0 24 24">
-                                <path fill="#f0f0f0"
-                                      d="M19.885 3.906a.621.621 0 0 0-.354.12c-.08.08-.161.196-.161.313c0 .2.236.474.673.923c1.822 1.754 2.738 3.903 2.732 6.494c-.007 2.867-.97 5.17-2.844 6.954c-.394.353-.556.63-.557.867c0 .116.08.237.16.353a.58.58 0 0 0 .353.162c.434 0 1.04-.512 1.833-1.509c1.542-1.89 2.24-3.978 2.279-6.824c.036-2.847-.857-4.777-2.603-6.77c-.63-.712-1.153-1.082-1.511-1.083m-15.769.002c-.358 0-.882.37-1.51 1.083C.858 6.984-.035 8.914.001 11.761c.04 2.846.737 4.933 2.28 6.824c.791.997 1.398 1.51 1.832 1.509a.573.573 0 0 0 .352-.162c.08-.116.16-.237.16-.353c0-.237-.162-.514-.556-.866c-1.873-1.785-2.837-4.087-2.844-6.955c-.006-2.591.91-4.74 2.732-6.494c.437-.449.674-.722.673-.923c0-.117-.08-.233-.161-.313a.621.621 0 0 0-.354-.12zm7.056.895s.655 2.081-2.649 6.727c-3.156 4.433 1.045 7.15 1.432 7.386c-.281-.18-2.001-1.5.402-5.423c.466-.77 1.076-1.47 1.834-3.041c0 0 .67.946.32 2.998c-.523 3.101 2.271 2.214 2.314 2.257c.976 1.15-.808 3.17-.917 3.233c-.108.061 5.096-3.13 1.399-7.935c-.253.253-.582 1.442-1.267 1.266c-.684-.174 2.125-3.494-2.868-7.468M9.955 18.916c.023.016.038.024.038.024z" />
-                            </svg>
-                        </a>
-                    </div>
-                    <div id="github-profile-link">
+    <!-- END NAV -->
+
+    <!-- START WELCOME SECTION -->
+    <section id="welcome-section"
+             class="welcome-section">
+        <div class="inner-welcome-section">
+            <h1>
+                Hey I am Madiha Muhammad
+            </h1>
+            <p>
+                a web developer
+            </p>
+        </div>
+    </section>
+    <!-- END WELCOME SECTION -->
+
+    <!-- START PROJECTS SECTION -->
+    <section id="projects"
+             class="projects-section">
+        <div class="inner-projects-section">
+            <div class="projects-section-header">
+                <h2>
+                    These are some of my projects
+                </h2>
+            </div>
+
+            <div class="project-grid">
+                <div class="project">
+                    <a class="project-tile"
+                       href="https://flip-card-uiux.netlify.app"
+                       target="_blank"
+                       alt="Flip Card UI/UX Design">
+                        <img src=""
+                             class="project-image" />
+                        <p class="project-title">
+                            <span class="code">&lt;</span>
+                            Flip Card
+                            <span class="code">&#47;&gt;</span>
+                        </p>
+                    </a>
+                </div>
+                <div class="project">
+                    <a class="project-tile"
+                       href="https://travel-app-uiux.netlify.app"
+                       target="_blank"
+                       alt="Arizona Travel App UI/UX Design">
+                        <img src=""
+                             class="project-image" />
+                        <p class="project-title">
+                            <span class="code">&lt;</span>
+                            Arizona Travel App
+                            <span class="code">&#47;&gt;</span>
+                        </p>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- END PROJECTS SECTION -->
+
+    <!-- START CONTACT SECTION -->
+    <section id="contact"
+             class="contact-section">
+        <div class="inner-contact-section">
+            <div class="contact-section-header">
+                <h2>
+                    Let's work together...
+                </h2>
+                <p>
+                    How do you take your coffee
+                    <i class="fa-solid fa-mug-hot"></i>
+                    ?
+                </p>
+            </div>
+
+
+            <div class="contact-links">
+                <div id="inner-contact-links">
+                    <div id="profile-link"
+                         class="btn contact-details">
                         <a href="https://github.com/madiha-m"
                            alt="github"
                            target="_blank">
-                            <svg xmlns="http://www.w3.org/2000/svg"
-                                 width="24"
-                                 height="24"
-                                 viewBox="0 0 24 24">
-                                <path fill="#f0f0f0"
-                                      d="M12 2A10 10 0 0 0 2 12c0 4.42 2.87 8.17 6.84 9.5c.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34c-.46-1.16-1.11-1.47-1.11-1.47c-.91-.62.07-.6.07-.6c1 .07 1.53 1.03 1.53 1.03c.87 1.52 2.34 1.07 2.91.83c.09-.65.35-1.09.63-1.34c-2.22-.25-4.55-1.11-4.55-4.92c0-1.11.38-2 1.03-2.71c-.1-.25-.45-1.29.1-2.64c0 0 .84-.27 2.75 1.02c.79-.22 1.65-.33 2.5-.33c.85 0 1.71.11 2.5.33c1.91-1.29 2.75-1.02 2.75-1.02c.55 1.35.2 2.39.1 2.64c.65.71 1.03 1.6 1.03 2.71c0 3.82-2.34 4.66-4.57 4.91c.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0 0 12 2" />
-                            </svg>
+                            <i class="fa-brands fa-github"></i>
+                            GitHub
                         </a>
                     </div>
+                    <div class="btn contact-details">
+                        <a href="https://www.freecodecamp.org/madiha_muhammad"
+                           alt="freeCodeCamp"
+                           target="_blank">
+                            <i class="fa-brands fa-free-code-camp"></i>
+                            freeCodeCamp
+                        </a>
+                    </div>
+                    <div class="btn contact-details">
+                        <a href="#"
+                           alt="freeCodeCamp"
+                           target="_blank">
+                            <i class="fa-brands fa-free-code-camp"></i>
+                            freeCodeCamp
+                        </a>
+                    </div>
+                    <div class="btn contact-details">
+                        <a href="https://www.freecodecamp.org/madiha_muhammad"
+                           alt="freeCodeCamp"
+                           target="_blank">
+                            <i class="fa-brands fa-free-code-camp"></i>
+                            freeCodeCamp
+                        </a>
+                    </div>
+
                 </div>
             </div>
-            <div id="copy-right">
-                <div id="inner-copy-right">
-                    <svg xmlns="http://www.w3.org/2000/svg"
-                         width="11"
-                         height="11"
-                         viewBox="0 0 512 512">
-                        <path fill="#f0f0f0"
-                              d="M256 8C119.033 8 8 119.033 8 256s111.033 248 248 248s248-111.033 248-248S392.967 8 256 8m0 448c-110.532 0-200-89.451-200-200c0-110.531 89.451-200 200-200c110.532 0 200 89.451 200 200c0 110.532-89.451 200-200 200m107.351-101.064c-9.614 9.712-45.53 41.396-104.065 41.396c-82.43 0-140.484-61.425-140.484-141.567c0-79.152 60.275-139.401 139.762-139.401c55.531 0 88.738 26.62 97.593 34.779a11.965 11.965 0 0 1 1.936 15.322l-18.155 28.113c-3.841 5.95-11.966 7.282-17.499 2.921c-8.595-6.776-31.814-22.538-61.708-22.538c-48.303 0-77.916 35.33-77.916 80.082c0 41.589 26.888 83.692 78.277 83.692c32.657 0 56.843-19.039 65.726-27.225c5.27-4.857 13.596-4.039 17.82 1.738l19.865 27.17a11.947 11.947 0 0 1-1.152 15.518" />
-                    </svg>
+
+            <div class="copy-right">
+                <div class="inner-copy-right">
+                    <i class="fa-regular fa-copyright"></i>
                     Designed by Madiha at
                     <a href="https://swiss-te.ch/"
                        target="_blank">
@@ -103,6 +187,8 @@
             </div>
         </div>
     </section>
+    <!-- END CONTACT SECTION -->
+
 </body>
 
 </html>
