@@ -142,7 +142,7 @@
     font-size: 3.7rem;
   }
 }
-@media ((max-width: 87.5rem) and (min-width: 61.26rem)) {
+@media (max-width: 87.5rem) and (min-width: 61.26rem) {
   .welcome-section h1 {
     margin: auto 3em;
   }
@@ -150,7 +150,7 @@
     font-size: 3.5rem;
   }
 }
-@media ((max-width: 61.25rem) and (min-width: 26.58rem)) {
+@media (max-width: 61.25rem) and (min-width: 26.58rem) {
   .welcome-section h1 {
     margin: auto 1em;
   }
