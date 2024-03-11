@@ -39,7 +39,7 @@
 
 <body>
 
-    <!-- START NAV -->
+    <!-- START NAVBAR SECTION -->
     <section id="navbar"
              class="nav-section">
         <div class="nav-logo">
@@ -84,7 +84,7 @@
             </div>
         </div>
     </section>
-    <!-- END NAV -->
+    <!-- END NAVBAR SECTION -->
 
     <!-- START WELCOME SECTION -->
     <section id="welcome-section"
@@ -110,35 +110,106 @@
                 </h2>
             </div>
 
-            <div class="project-grid">
-                <div class="project">
-                    <a class="project-tile"
+            <div class="projects-grid">
+                <div class="project-card-wrapper">
+                    <a class="project-link"
                        href="https://flip-card-uiux.netlify.app"
                        target="_blank"
                        alt="Flip Card UI/UX Design">
-                        <img src=""
-                             class="project-image" />
-                        <p class="project-title">
-                            <span class="code">&lt;</span>
+                        <img src="./assets/images/flip-card.png"
+                             alt="Flip Card"
+                             class="project-img" />
+                        <p class="project-name">
+                            <span class="fancy-project-name">&lt;</span>
                             Flip Card
-                            <span class="code">&#47;&gt;</span>
+                            <span class="fancy-project-name">&#47;&gt;</span>
                         </p>
                     </a>
                 </div>
-                <div class="project">
-                    <a class="project-tile"
-                       href="https://travel-app-uiux.netlify.app"
+                <div class="project-card-wrapper">
+                    <a class="project-link"
+                       href="https://codepen.io/freeCodeCamp/full/qRZeGZ"
                        target="_blank"
-                       alt="Arizona Travel App UI/UX Design">
-                        <img src=""
-                             class="project-image" />
-                        <p class="project-title">
-                            <span class="code">&lt;</span>
-                            Arizona Travel App
-                            <span class="code">&#47;&gt;</span>
+                       alt="Random Quote Machine">
+                        <img src="./assets/images/random-quote-machine.png"
+                             alt="Flip Card"
+                             class="project-img" />
+                        <p class="project-name">
+                            <span class="fancy-project-name">&lt;</span>
+                            Random Quote Machine
+                            <span class="fancy-project-name">&#47;&gt;</span>
                         </p>
                     </a>
                 </div>
+                <div class="project-card-wrapper">
+                    <a class="project-link"
+                       href="https://codepen.io/freeCodeCamp/full/wgGVVX"
+                       target="_blank"
+                       alt="JavaScript Calculator">
+                        <img src="./assets/images/calc.png"
+                             alt="JavaScript Calculator"
+                             class="project-img" />
+                        <p class="project-name">
+                            <span class="fancy-project-name">&lt;</span>
+                            JavaScript Calculator
+                            <span class="fancy-project-name">&#47;&gt;</span>
+                        </p>
+                    </a>
+                </div>
+                <div class="project-card-wrapper">
+                    <a class="project-link"
+                       href="https://codepen.io/freeCodeCamp/full/mVEJag"
+                       target="_blank"
+                       alt="Map Data Across the Globe">
+                        <img src="./assets/images/map.jpg"
+                             alt="Map Data Across the Globe"
+                             class="project-img" />
+                        <p class="project-name">
+                            <span class="fancy-project-name">&lt;</span>
+                            Map Data Across the Globe
+                            <span class="fancy-project-name">&#47;&gt;</span>
+                        </p>
+                    </a>
+                </div>
+                <div class="project-card-wrapper">
+                    <a class="project-link"
+                       href="https://codepen.io/freeCodeCamp/full/wGqEga"
+                       target="_blank"
+                       alt="Wikipedia Viewer">
+                        <img src="./assets/images/wiki.png"
+                             alt="Wikipedia Viewer"
+                             class="project-img" />
+                        <p class="project-name">
+                            <span class="fancy-project-name">&lt;</span>
+                            Wikipedia Viewer
+                            <span class="fancy-project-name">&#47;&gt;</span>
+                        </p>
+                    </a>
+                </div>
+                <div class="project-card-wrapper">
+                    <a class="project-link"
+                       href="https://codepen.io/freeCodeCamp/full/KzXQgy"
+                       target="_blank"
+                       alt="Tic Tac Toe Game">
+                        <img src="./assets/images/tic-tac-toe.png"
+                             alt="Tic Tac Toe Game"
+                             class="project-img" />
+                        <p class="project-name">
+                            <span class="fancy-project-name">&lt;</span>
+                            Tic Tac Toe Game
+                            <span class="fancy-project-name">&#47;&gt;</span>
+                        </p>
+                    </a>
+                </div>
+            </div>
+
+            <div class="projects-btn btn general">
+                <a href="https://codepen.io/FreeCodeCamp/"
+                   class="btn-show-all"
+                   target="_blank">
+                    Show all
+                    <span class="fancy-btn-show-all">&gt;</span>
+                </a>
             </div>
         </div>
     </section>
@@ -149,21 +220,21 @@
              class="contact-section">
         <div class="inner-contact-section">
             <div class="contact-section-header">
-                <h2>
+                <h1>
                     Let's work together...
-                </h2>
+                </h1>
                 <p>
-                    How do you take your coffee
+                    How do you take your
+                    <!-- <i class="fa-regular fa-mug"></i> -->
                     <i class="fa-solid fa-mug-hot"></i>
                     ?
                 </p>
             </div>
 
-
             <div class="contact-links">
                 <div id="inner-contact-links">
                     <div id="profile-link"
-                         class="btn contact-details">
+                         class="btn btn-contact-detail general">
                         <a href="https://github.com/madiha-m"
                            alt="github"
                            target="_blank">
@@ -171,7 +242,7 @@
                             GitHub
                         </a>
                     </div>
-                    <div class="btn contact-details">
+                    <div class="btn btn-contact-detail general">
                         <a href="https://www.freecodecamp.org/madiha_muhammad"
                            alt="freeCodeCamp"
                            target="_blank">
@@ -179,28 +250,41 @@
                             freeCodeCamp
                         </a>
                     </div>
-                    <div class="btn contact-details">
+                    <div class="btn btn-contact-detail general">
                         <a href="#"
-                           alt="freeCodeCamp"
+                           alt="X"
                            target="_blank">
-                            <i class="fa-brands fa-free-code-camp"></i>
-                            freeCodeCamp
+                            <i class="fa-brands fa-square-x-twitter"></i>
+                            X
                         </a>
                     </div>
-                    <div class="btn contact-details">
+                    <div class="btn btn-contact-detail general">
+                        <a href="#"
+                           alt="send an email"
+                           target="_blank">
+                            <i class="fa-solid fa-at"></i>
+                            Send an email
+                        </a>
+                    </div>
+                    <div class="btn btn-contact-detail general">
                         <a href="https://www.freecodecamp.org/madiha_muhammad"
-                           alt="freeCodeCamp"
+                           alt="Call me"
                            target="_blank">
-                            <i class="fa-brands fa-free-code-camp"></i>
-                            freeCodeCamp
+                            <i class="fa-solid fa-mobile-screen-button"></i>
+                            Call me
                         </a>
                     </div>
-
                 </div>
             </div>
+        </div>
+    </section>
+    <!-- END CONTACT SECTION -->
 
+    <!-- START FOOTER SECTION -->
+    <section class="footer-scetion">
+        <div class="inner-footer-section">
             <div class="copy-right">
-                <div class="inner-copy-right">
+                <div class="inner-copy-right general">
                     <i class="fa-regular fa-copyright"></i>
                     Designed by Madiha at
                     <a href="https://swiss-te.ch/"
@@ -211,7 +295,7 @@
             </div>
         </div>
     </section>
-    <!-- END CONTACT SECTION -->
+    <!-- END FOOTER SECTION -->
 
 </body>
 

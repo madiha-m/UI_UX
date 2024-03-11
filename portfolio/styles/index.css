@@ -5,6 +5,7 @@
   --color-dark-blue: #45567d;
   --color-gray: #303841;
   --color-dark-gray: #212124;
+  --color-coral: #ff7f50;
   --color-company-name: #dc4e48;
 }
 
@@ -19,7 +20,8 @@
 *,
 *::before,
 *::after {
-  box-sizing: border-box;
+  /* box-sizing: border-box; */
+  box-sizing: inherit;
 }
 
 html {
@@ -36,21 +38,21 @@ html {
 }
 
 /* 1200px / 16px = 75em */
-@media (max-width: 75rem) {
+@media ((max-width: 87.5rem) and (min-width: 61.26rem)) {
   html {
     font-size: 60%;
   }
 }
 
 /* 980px / 16px = 16.25em */
-@media (max-width: 16.25rem) {
+@media ((max-width: 61.25rem) and (min-width: 26.58rem)) {
   html {
     font-size: 58%;
   }
 }
 
 /* 460px / 16px = 28.75em */
-@media (max-width: 28.75rem) {
+@media (max-width: 26.57rem) {
   html {
     font-size: 55%;
   }
@@ -62,7 +64,7 @@ html {
     font-size: 1.8rem; /* 18px */
     font-weight: 400;
     line-height: 1.4;
-    color: vae(--color-white);
+    color: var(--color-white);
   }
 }
 
@@ -74,13 +76,78 @@ h2 {
   color: var(--color-white);
 }
 
-h1 {
+/* 1401px / 16px = 87.51em */
+@media (min-width: 87.51rem) {
+  h1 {
+    font-size: 6.3rem;
+  }
+  h2 {
+    font-size: 4.2rem;
+  }
+  p {
+    font-size: 2rem;
+  }
+  .general {
+    font-size: 2rem;
+  }
+}
+
+/* 1400px / 16px = 87.5em */
+@media ((max-width: 87.5rem) and (min-width: 61.26rem)) {
+  h1 {
+    font-size: 5rem;
+  }
+  h2 {
+    font-size: 3.7rem;
+  }
+  p {
+    font-size: 2rem;
+  }
+  .general {
+    font-size: 2rem;
+  }
+}
+
+/* 980px / 16px = 61.25em */
+@media ((max-width: 61.25rem) and (min-width: 26.58rem)) {
+  h1 {
+    font-size: 3.7rem;
+  }
+  h2 {
+    font-size: 2.5rem;
+  }
+  p {
+    font-size: 1.5rem;
+  }
+  .general {
+    font-size: 2rem;
+  }
+}
+
+/* 425px / 16px = 26.57em */
+@media (max-width: 26.57rem) {
+  h1 {
+    font-size: 2.7rem;
+  }
+
+  h2 {
+    font-size: 2rem;
+  }
+  p {
+    font-size: 1.5rem;
+  }
+  .general {
+    font-size: 1.5rem;
+  }
+}
+
+/* h1 {
   font-size: 6rem;
 }
 
 h2 {
   font-size: 4.2rem;
-}
+} */
 
 ul {
   list-style: none;
@@ -88,11 +155,20 @@ ul {
 
 a {
   text-decoration: none;
-  color: var(--color-white);
   list-style-type: none;
+  color: var(--color-white);
+  font-family: "Raleway", sans-serif;
 }
 
 img {
   display: block;
   width: 100%;
+}
+p {
+  font-family: "Raleway", sans-serif;
+}
+.btn {
+  display: inline-block;
+  padding: 1rem 2rem;
+  border-radius: 4px;
 }
