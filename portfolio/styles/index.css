@@ -76,8 +76,8 @@ h2 {
   color: var(--color-white);
 }
 
-/* 1401px / 16px = 87.51em */
-@media (min-width: 87.51rem) {
+/* 1401px / 16px = 90rem */
+@media (min-width: 90rem) {
   h1 {
     font-size: 6.3rem;
   }
@@ -88,12 +88,12 @@ h2 {
     font-size: 2rem;
   }
   .general {
-    font-size: 2rem;
+    font-size: 2.5rem;
   }
 }
 
 /* 1400px / 16px = 87.5em */
-@media ((max-width: 87.5rem) and (min-width: 61.26rem)) {
+@media ((max-width: 90rem) and (min-width: 61.26rem)) {
   h1 {
     font-size: 5rem;
   }
@@ -169,6 +169,9 @@ p {
 }
 .btn {
   display: inline-block;
-  padding: 1rem 2rem;
+  padding: 1rem 2rem 1.2rem;
   border-radius: 4px;
+}
+.general {
+  font-weight: 600;
 }

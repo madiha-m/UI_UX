@@ -322,21 +322,23 @@ Note: check it after completing project section
   flex-wrap: wrap;
 }
 .btn-contact-detail {
+  text-shadow: 12px 2px 1px #1f1f1f;
   border: 2px solid var(--color-dark-gray);
   padding: 0.6rem 2rem;
+  transition: transform 0.3s ease-out;
 }
 .btn-contact-detail:hover {
   border: 2px solid var(--color-red);
   padding: 0.6rem 2rem;
   border-radius: 6px;
   box-shadow: 0px 0px 22px var(--color-red);
+  transform: translateY(8px);
 }
 
 /* FOOTER SECTION */
 
 .footer-scetion {
   display: flex;
-  /* justify-content: space-evenly; */
   background: var(--color-dark-gray);
   color: var(--color-white);
   border-top: 4px solid var(--color-red);
@@ -350,7 +352,7 @@ Note: check it after completing project section
 }
 .inner-copy-right {
   vertical-align: middle;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
 }
 .copy-right a {
   color: var(--color-company-name);
@@ -359,13 +361,10 @@ Note: check it after completing project section
   font-weight: 400;
 }
 @media (max-width: 26.56rem) {
-  .inner-footer-scetion {
+  .footer-scetion {
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
-  }
-  .inner-copy-right {
-    font-size: 1.2rem;
   }
 }
