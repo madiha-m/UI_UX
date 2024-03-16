@@ -1,0 +1,318 @@
+/* font */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;600&family=Montserrat&display=swap");
+
+/* box sizing */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Base Reset */
+* {
+  padding: 0;
+  margin: 0;
+}
+
+/* custome properties/var */
+:root {
+  /* color */
+  --primary-100: #bbc0c2;
+  --primary-200: #8f969a;
+  --primary-300: #626c71;
+  --primary-400: #354249;
+  --primary-500: #1f2e35;
+  --primary-600: #18242a;
+  --primary-700: #121b1f;
+  --primary-800: #0c1215;
+  --primary-900: #06090a;
+
+  /* dark grey */
+  --grey-dark: #3d3d3d;
+  --green-dark: #1e393e;
+  --purple-dark: #282b45;
+  --blue-dark: #1c3149;
+
+  --grey-light: #ffede5;
+  --green-light: #e8f5f4;
+  --purple-light: #f2e7fb;
+  --blue-light: #e5edff;
+  --green-light: #2fd886;
+  --red-light: #ff3366;
+
+  /* blue grey */
+  --blue-100: #e6eeff;
+  --blue-300: #0086d6;
+  --blue-500: #335ef7;
+  --purple: #6b55f8;
+  --grey-medium: #475e69;
+
+  --white-100: #f7f8fa;
+  --white-500: #ffffff;
+  --gold: #ffc942;
+
+  /* fonts */
+  --fontFamily: "Roboto", sans-serif;
+
+  /* miscellaneous var */
+  --bg1-color: var(--white);
+  --bg2-color: var(--primary-500);
+  --bg3-color: var(--grey-dark);
+  --b4-color: var(--primary-500);
+
+  --txt1-color: var(--primary-500);
+  --txt2-color: var(--grey-medium);
+  --txt3-color: var(--white);
+
+  --borderRadius: 0.25rems;
+  --letterSpacing: 1px;
+  --transition: 0.3s ease-in-out all;
+  /* --max-width: 1120px; */
+  --fixed-width: 600px;
+
+  /* sizes */
+  --size-xs: 0.75rem; /* 12px */
+  --size-sm: 0.875rem; /* 14px */
+  --size-base: 1rem; /* 16px */
+  --size-lg: 1.125rem; /* 18px */
+  --size-xl: 1.25rem; /* 20px */
+  --size-2xl: 1.5rem; /* 24px */
+  --size-3xl: 1.875rem; /* 30px */
+  --size-4xl: 2.25rem; /* 36px */
+  --size-5xl: 3rem; /* 48px */
+  --size-6xl: 3.75rem; /* 60px */
+  --size-7xl: 4.5rem; /* 72px */
+  --size-8xl: 6rem; /* 96px */
+  --size-9xl: 8rem; /* 128px */
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+body {
+  font-family: "Poppins", sans-serif;
+  line-height: 1.75;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Poppins", sans-serif;
+}
+@media screen and (min-width: 160rem) {
+  h1 {
+    font-size: 6.3rem;
+  }
+  h2 {
+    font-size: 4.2rem;
+  }
+  h3 {
+    font-weight: bold;
+  }
+  h4 {
+    font-size: 3.8rem;
+  }
+  h5 {
+    font-size: 3rem;
+  }
+  h6 {
+    font-size: 2.5rem;
+  }
+  p {
+    font-size: 2.2rem;
+  }
+  .general {
+    font-size: 2.5rem;
+  }
+  .tab {
+    font-size: var(--size-4xl);
+  }
+}
+/* max-width: 2560rem */
+@media screen and (max-width: 160rem) {
+  h1 {
+    font-size: 6.3rem;
+  }
+  h2 {
+    font-size: 4.2rem;
+  }
+  h3 {
+    font-weight: bold;
+  }
+  h4 {
+    font-size: 3.8rem;
+  }
+  h5 {
+    font-size: 3rem;
+  }
+  h6 {
+    font-size: 2.5rem;
+  }
+  p {
+    font-size: 2.2rem;
+  }
+  .general {
+    font-size: 2.5rem;
+  }
+  .tab {
+    font-size: var(--size-3xl);
+  }
+}
+/* max-width: 1440rem */
+@media screen and (max-width: 90rem) {
+  h1 {
+    font-size: 6.3rem;
+  }
+  h2 {
+    font-size: 4.2rem;
+  }
+  h3 {
+    font-weight: bold;
+  }
+  h4 {
+    font-size: 3.8rem;
+  }
+  h5 {
+    font-size: 3rem;
+  }
+  h6 {
+    font-size: 2.5rem;
+  }
+  p {
+    font-size: 2.2rem;
+  }
+  .general {
+    font-size: 2.5rem;
+  }
+  .tab {
+    font-size: var(--size-3xl);
+  }
+}
+/* max-width: 1024rem */
+@media screen and (max-width: 64rem) {
+  h1 {
+    font-size: 6.3rem;
+  }
+  h2 {
+    font-size: 4.2rem;
+  }
+  h3 {
+    font-weight: bold;
+  }
+  h4 {
+    font-size: 3.8rem;
+  }
+  h5 {
+    font-size: 3rem;
+  }
+  h6 {
+    font-size: 2.5rem;
+  }
+  p {
+    font-size: 2.2rem;
+  }
+  .general {
+    font-size: 2.5rem;
+  }
+  .tab {
+    font-size: var(--size-2xl);
+  }
+}
+/* max-width: 768rem */
+@media screen and (max-width: 48rem) and (min-width: 26.563rem) {
+  h1 {
+    font-size: 6.3rem;
+  }
+  h2 {
+    font-size: 4.2rem;
+  }
+  h3 {
+    font-weight: bold;
+  }
+  h4 {
+    font-size: 3.8rem;
+  }
+  h5 {
+    font-size: 3rem;
+  }
+  h6 {
+    font-size: 2.5rem;
+  }
+  p {
+    font-size: 2.2rem;
+  }
+  .general {
+    font-size: 2.5rem;
+  }
+  .tab {
+    font-size: var(--size-2xl);
+  }
+  .logo {
+    width: var(--size-9xl);
+  }
+}
+/* max-width: 425rem */
+@media screen and (max-width: 26.6rem) {
+  h1 {
+    font-size: 2.9rem;
+  }
+  h2 {
+    font-size: 4.2rem;
+  }
+  h3 {
+    font-weight: bold;
+  }
+  h4 {
+    font-size: 3.8rem;
+  }
+  h5 {
+    font-size: 3rem;
+  }
+  h6 {
+    font-size: 2.5rem;
+  }
+  p {
+    font-size: 2.2rem;
+  }
+  .general {
+    font-size: 2.5rem;
+  }
+  .tab {
+    font-size: var(--size-xl);
+  }
+  .logo {
+    width: var(--size-6xl);
+  }
+}
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  list-style-type: none;
+  font-family: var(--fontFamily);
+}
+.btn {
+  cursor: pointer;
+  border: transparent;
+  border-radius: var(--borderRadius);
+  letter-spacing: var(--letterSpacing);
+  padding: 0.375rem 0.2rem;
+  transition: var(--transition);
+  text-transform: capitalize;
+  display: inline-block;
+}
+@media screen and (min-width: 26.7rem) {
+  .logo {
+    width: var(--size-6xl);
+  }
+}
+.wrapper-logo {
+  display: flex;
+  align-items: center;
+}
