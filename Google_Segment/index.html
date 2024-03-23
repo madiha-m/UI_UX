@@ -33,7 +33,7 @@
     <link
         rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
-    >
+    />
 
 </head>
 
@@ -68,13 +68,13 @@
                         class="nav-link "
                     >Home</a>
                     <a
-                        href="./html/popular.html"
+                        href="#popular"
                         class="nav-link"
                     >Popular</a>
                     <a
-                        href="./html/new_comer.html"
+                        href="#tools"
                         class="nav-link"
-                    >New Comer</a>
+                    >Tool Hub</a>
                 </div>
                 <div class="nav-btn">
                     <a
@@ -105,7 +105,7 @@
                         Information about the newest and most popular design and developer tools throughout the world.
                     </p>
                 </div>
-                <div class="wrapper-btn-explore">
+                <div class="btn wrapper-btn-explore">
                     <a
                         href="#"
                         class="btn-explore"
@@ -114,33 +114,33 @@
                 </div>
                 <div class="wrapper-avatars">
                     <div class="wrapper-avatar">
-                        <div class="img-avatar">
+                        <div class="wrapper-img-avatar">
                             <img
                                 src="./assets/images/oval-1.png"
                                 alt="user name"
+                                class="img1"
                             >
-                        </div>
-                        <div class="img-avatar">
                             <img
                                 src="./assets/images/oval-2.png"
                                 alt="user name"
+                                class="img2"
                             >
                         </div>
-                        <div class="name-avatar">
+                        <div class="name-avatar p-txt">
                             <span>4,00+</span> User
                         </div>
                     </div>
-                    <div class="wrapper-avatar">
-                        <div class="img-tool">
+                    <div class="wrapper-avatar p-txt">
+                        <div class="wrapper-img-tool">
                             <img
-                                src="./assets/images/xd.png"
+                                src="./assets/images/avatar-xd.png"
                                 alt="xd"
+                                class="img1"
                             >
-                        </div>
-                        <div class="img-tool">
                             <img
-                                src="./assets/images/invision.png"
+                                src="./assets/images/avatra-invision.png"
                                 alt="invision"
+                                class="img2"
                             >
                         </div>
                         <div class="name-avatar">
@@ -158,6 +158,414 @@
         </div>
     </section>
     <!-- Home Page End-->
+
+    <!-- Most Popular Page -->
+    <section
+        class="container container-popular"
+        id="popular"
+    >
+        <div class="wrapper-popular">
+            <div class="title-popular">
+                <h2>
+                    Most Popular
+                </h2>
+            </div>
+            <div class="grid-cards-popular">
+                <div class="wrapper-card-popular">
+                    <a
+                        href="#"
+                        class="link-card-popular"
+                    >
+                        <div class="img-card-popular">
+                            <img
+                                src="./assets/images/xd.png"
+                                alt="card 1"
+                            >
+                        </div>
+                        <h4>Adobe XD</h4>
+                        <p>Adobe XD adalah alat desain berbasis vektor untuk membuat desain website dan aplikasi.</p>
+                    </a>
+                </div>
+                <div class="wrapper-card-popular">
+                    <div class="img-card-popular">
+                        <img
+                            src="./assets/images/invision.png"
+                            alt="card 2"
+                        >
+                    </div>
+                    <h4>InVision</h4>
+                    <p>InVision design untuk kebutuhan website, mobile, tablet, dan juga watch.</p>
+                </div>
+                <div class="wrapper-card-popular">
+                    <div class="img-card-popular">
+                        <img
+                            src="./assets/images/figma.png"
+                            alt="card 3"
+                        >
+                    </div>
+                    <h4>Figma</h4>
+                    <p>Figma adalah aplikasi desain berbasis cloud dan alat prototyping untuk proyek digital.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Most Popular Page End -->
+
+    <!-- Trusted Brands -->
+    <section class="container container-brands">
+        <div class="wrapper-brands">
+            <div class="title-brands">
+                <h2>Trusted Brands</h2>
+            </div>
+            <div class="grid-brands">
+                <div class="wrapper-card-brand">
+                    <a
+                        href="https://www.google.com/"
+                        target="_blank"
+                    >
+                        <img
+                            src="./assets/images/google.png"
+                            alt="Google Logo"
+                        >
+                        <p>
+                            Innovative technologies empower individuals, fostering growth and collaboration worldwide.
+                        </p>
+                    </a>
+                </div>
+                <div class="wrapper-card-brand">
+                    <a
+                        href="https://www.netflix.com/"
+                        target="_blank"
+                    >
+                        <img
+                            src="./assets/images/netflix.png"
+                            alt="netflix logo"
+                        >
+                        <p>
+                            Revolutionizing entertainment through captivating content and global accessibility.
+                        </p>
+                    </a>
+                </div>
+                <div class="wrapper-card-brand">
+                    <a
+                        href="https://www.airbnb.com/"
+                        target="_blank"
+                    >
+                        <img
+                            src="./assets/images/airbnb.png"
+                            alt="airbnb logo"
+                        >
+                        <p>
+                            Creating unforgettable experiences through unique accommodations and seamless travel
+                            experiences.
+                        </p>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Trusted Brands End -->
+
+    <!-- Beginner's Tools Hub -->
+    <section
+        class="container container-tools"
+        id="tools"
+    >
+        <div class="wrapper-tools">
+            <div class="title-tools">
+                <h2>Beginner's Tools Hub</h2>
+            </div>
+            <div class="grid-tools">
+                <div class="wrapper-card-tool">
+                    <a
+                        href="https://www.framer.com/"
+                        target="_blank"
+                    >
+                        <div
+                            class="img-card-tool"
+                            style="background-color: var(--blue-light);"
+                        >
+                            <img
+                                src="./assets/images/farmer.png"
+                                alt="farmer logo"
+                            >
+                        </div>
+                        <h4>Farmer</h4>
+                        <p>
+                            It's prototyping made simple—no code required, browser-based, and free for everyone.
+                            High-fidelity in half the time.
+                        </p>
+                    </a>
+                </div>
+                <div class="wrapper-card-tool">
+                    <a
+                        href="https://whimsical.com/"
+                        target="_blank"
+                    >
+                        <div
+                            class="img-card-tool"
+                            style="background-color: var(--purple-light);"
+                        >
+                            <img
+                                src="./assets/images/whimsical.png"
+                                alt="whimsical logo"
+                            >
+                        </div>
+                        <h4>Whimsical</h4>
+                        <p>
+                            Communicate visually at the speed of thought – collaborative flowcharts, wireframes, sticky
+                            notes, and mind maps.
+                        </p>
+                    </a>
+                </div>
+                <div class="wrapper-card-tool">
+                    <a
+                        href="https://www.edrawmind.com/"
+                        target="_blank"
+                    >
+                        <div
+                            class="img-card-tool"
+                            style="background-color: var(--green-light);"
+                        >
+                            <img
+                                src="./assets/images/mindmaster.png"
+                                alt="MindMaster logo"
+                            >
+                        </div>
+                        <h4>MindMaster</h4>
+                        <p>
+                            Brainstorming has never been easier! MindMaster is a full-featured collaborative mind
+                            mapping and brainstorming tool.
+                        </p>
+                    </a>
+                </div>
+                <div class="wrapper-card-tool">
+                    <a
+                        href="https://zapier.com/"
+                        target="_blank"
+                    >
+                        <div
+                            class="img-card-tool"
+                            style="background-color: var(--red-light);"
+                        >
+                            <img
+                                src="./assets/images/zapier.png"
+                                alt="zapier logo"
+                            >
+                        </div>
+                        <h4>Zapier</h4>
+                        <p>
+                            Zapier moves info between your web apps automatically, so you can focus on your most
+                            important work.
+                        </p>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Beginner's Tools Hub End -->
+
+    <!-- Testimonial -->
+    <section class="container container-testimonial">
+        <div class="wrapper-testimonial">
+            <div class="title-testimonial">
+                <h2>Testimonial</h2>
+            </div>
+            <div class="grid-testimonial">
+                <div class="wrapper-card-testimonial">
+                    <div class="stars-rating">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                    </div>
+                    <p>
+                        Gear provides powerful tool information for Designers, Developers, and Business Owners to be
+                        more productive.
+                    </p>
+                    <div class="wrapper-testifier">
+                        <div class="img-testifier">
+                            <img
+                                src="./assets/images/testifier1.png"
+                                alt="testifier"
+                            >
+                        </div>
+                        <div class="info-testifier">
+                            <h5>Wahid Ari</h5>
+                            <p>Designer</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="wrapper-card-testimonial">
+                    <div class="stars-rating">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                    </div>
+                    <p>
+                        I found DevToolsHub, a platform with powerful tools for developers. It's boosted my productivity
+                        a lot!
+                    </p>
+                    <div class="wrapper-testifier">
+                        <div class="img-testifier">
+                            <img
+                                src="./assets/images/testifier2.png"
+                                alt="testifier"
+                            >
+                        </div>
+                        <div class="info-testifier">
+                            <h5>Wahid</h5>
+                            <p>Developer</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="wrapper-card-testimonial">
+                    <div class="stars-rating">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                    </div>
+                    <p>
+                        I've been using DesignToolsPro, a platform packed with powerful tools for UI/UX designers. It
+                        has greatly enhanced my workflow and productivity!
+                    </p>
+                    <div class="wrapper-testifier">
+                        <div class="img-testifier">
+                            <img
+                                src="./assets/images/testifier3.png"
+                                alt="testifier"
+                            >
+                        </div>
+                        <div class="info-testifier">
+                            <h5>Ari</h5>
+                            <p>UI/UX Designer</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Testimonial End -->
+
+    <!-- Subscribe -->
+    <section class="container-subscribe">
+        <div class="wrapper-subscribe">
+            <div class="title-subscribe">
+                <h2>Subscribe</h2>
+            </div>
+            <div class="wrapper-content-subscribe">
+                <p>
+                    Subscribe to get exclusive news & offer
+                </p>
+                <input
+                    type="email"
+                    placeholder="Email address"
+                >
+                <div class="btn wrapper-btn-subscribe">
+                    <a
+                        href="#"
+                        class="btn-subscribe"
+                    >Subscribe
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Subscribe End -->
+
+    <!-- Footer -->
+    <section class="container container-footer">
+        <div class="wrapper-footer">
+            <div class="grid-footer">
+                <div class="footer-aboutus footer-box">
+                    <a
+                        href="index.html"
+                        class="wrapper-logo"
+                    >
+                        <img
+                            src="./assets/images/logo.ico"
+                            alt="logo"
+                            class="logo"
+                        >
+                    </a>
+                    <div class="wrapper-sm">
+                        <a
+                            href="#"
+                            class="wrapper-logo"
+                        >
+                            <img
+                                src="./assets/images/fb.png"
+                                alt="Facebook"
+                                class="logo"
+                            >
+                        </a>
+                        <a
+                            href="#"
+                            class="wrapper-logo"
+                        >
+                            <img
+                                src="./assets/images/instagram.png"
+                                alt="Instagram"
+                                class="logo"
+                            >
+                        </a>
+                        <a
+                            href="#"
+                            class="wrapper-logo"
+                        >
+                            <img
+                                src="./assets/images/twitter.png"
+                                alt="Twitter"
+                                class="logo"
+                            >
+                        </a>
+                    </div>
+                </div>
+                <div class="resource footer-box">
+                    <h5>Resources</h5>
+                    <ul>
+                        <li>About Us</li>
+                        <li>Blog</li>
+                        <li>Contact</li>
+                        <li>FAQ</li>
+                    </ul>
+                </div>
+                <div class="legal-stuff footer-box">
+                    <h5>Legal Stuff</h5>
+                    <ul>
+                        <li>Disclaimer</li>
+                        <li>Financing</li>
+                        <li>Privacy Policy</li>
+                        <li>Terms of Service</li>
+                    </ul>
+                </div>
+                <div class="office footer-box">
+                    <h5>Office</h5>
+                    <ul>
+                        <li>m@buildwithangga.com</li>
+                        <li>Jln. Wahid Hasyim No 10D</li>
+                        <li>Jakarta, Indonesia</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copy-right">
+                <p>
+                    © 2021 All rights reserved | This template is made by Madiha at <a
+                        href="https://swiss-te.ch/"
+                        target="_blank"
+                    >
+                        Swiss Technologies
+                    </a>
+                </p>
+            </div>
+        </div>
+    </section>
+    <!-- Footer End -->
 
     <script src="./js//index.js"></script>
 </body>

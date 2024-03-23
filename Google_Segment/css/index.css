@@ -33,12 +33,12 @@
   --purple-dark: #282b45;
   --blue-dark: #1c3149;
 
-  --grey-light: #ffede5;
+  --red-light: #ffede5;
   --green-light: #e8f5f4;
   --purple-light: #f2e7fb;
   --blue-light: #e5edff;
-  --green-light: #2fd886;
-  --red-light: #ff3366;
+  --green-medium: #2fd886;
+  --red-medium: #ff3366;
 
   /* blue grey */
   --blue-100: #e6eeff;
@@ -55,16 +55,16 @@
   --fontFamily: "Roboto", sans-serif;
 
   /* miscellaneous var */
-  --bg1-color: var(--white);
-  --bg2-color: var(--primary-500);
-  --bg3-color: var(--grey-dark);
-  --b4-color: var(--primary-500);
+  --bg-1-color: var(--white-500);
+  --bg-2-color: var(--primary-500);
+  --bg-3-color: var(--grey-dark);
+  --bg-4-color: var(--primary-500);
 
-  --txt1-color: var(--primary-500);
-  --txt2-color: var(--grey-medium);
-  --txt3-color: var(--white);
+  --txt-1-color: var(--primary-500);
+  --txt-2-color: var(--grey-medium);
+  --txt-3-color: var(--white-500);
 
-  --borderRadius: 0.25rems;
+  --borderRadius: 1rem;
   --letterSpacing: 1px;
   --transition: 0.3s ease-in-out all;
   /* --max-width: 1120px; */
@@ -93,7 +93,7 @@ html {
 }
 body {
   font-family: "Poppins", sans-serif;
-  line-height: 1.75;
+  line-height: 1.55;
 }
 
 h1,
@@ -101,29 +101,29 @@ h2,
 h3,
 h4,
 h5,
-h6 {
+h6,
+p,
+.p-txt {
   font-family: "Poppins", sans-serif;
 }
 @media screen and (min-width: 160rem) {
   h1 {
-    font-size: 6.3rem;
+    font-size: 4.6rem;
   }
   h2 {
-    font-size: 4.2rem;
-  }
-  h3 {
-    font-weight: bold;
-  }
-  h4 {
     font-size: 3.8rem;
   }
+  h3 {
+    font-size: 3.6rem;
+  }
+  h4 {
+    font-size: 3.3rem;
+  }
   h5 {
-    font-size: 3rem;
+    font-size: 3.1rem;
   }
-  h6 {
-    font-size: 2.5rem;
-  }
-  p {
+  p,
+  .p-txt {
     font-size: 2.2rem;
   }
   .general {
@@ -136,24 +136,22 @@ h6 {
 /* max-width: 2560rem */
 @media screen and (max-width: 160rem) {
   h1 {
-    font-size: 6.3rem;
+    font-size: 4.3rem;
   }
   h2 {
-    font-size: 4.2rem;
+    font-size: 3.6rem;
   }
   h3 {
-    font-weight: bold;
+    font-size: 3.3rem;
   }
   h4 {
-    font-size: 3.8rem;
+    font-size: 3.1rem;
   }
   h5 {
-    font-size: 3rem;
+    font-size: 2.9rem;
   }
-  h6 {
-    font-size: 2.5rem;
-  }
-  p {
+  p,
+  .p-txt {
     font-size: 2.2rem;
   }
   .general {
@@ -166,24 +164,22 @@ h6 {
 /* max-width: 1440rem */
 @media screen and (max-width: 90rem) {
   h1 {
-    font-size: 6.3rem;
+    font-size: 4rem;
   }
   h2 {
-    font-size: 4.2rem;
+    font-size: 3.4rem;
   }
   h3 {
-    font-weight: bold;
+    font-size: 3.2rem;
   }
   h4 {
-    font-size: 3.8rem;
+    font-size: 2.9rem;
   }
   h5 {
-    font-size: 3rem;
+    font-size: 2.7rem;
   }
-  h6 {
-    font-size: 2.5rem;
-  }
-  p {
+  p,
+  .p-txt {
     font-size: 2.2rem;
   }
   .general {
@@ -196,24 +192,22 @@ h6 {
 /* max-width: 1024rem */
 @media screen and (max-width: 64rem) {
   h1 {
-    font-size: 6.3rem;
-  }
-  h2 {
-    font-size: 4.2rem;
-  }
-  h3 {
-    font-weight: bold;
-  }
-  h4 {
     font-size: 3.8rem;
   }
-  h5 {
+  h2 {
+    font-size: 3.3rem;
+  }
+  h3 {
     font-size: 3rem;
   }
-  h6 {
+  h4 {
+    font-size: 2.7rem;
+  }
+  h5 {
     font-size: 2.5rem;
   }
-  p {
+  p,
+  .p-txt {
     font-size: 2.2rem;
   }
   .general {
@@ -224,26 +218,24 @@ h6 {
   }
 }
 /* max-width: 768rem */
-@media screen and (max-width: 48rem) and (min-width: 26.563rem) {
+@media screen and (max-width: 48rem) and (min-width: 26.61rem) {
   h1 {
-    font-size: 6.3rem;
+    font-size: 3.5rem;
   }
   h2 {
-    font-size: 4.2rem;
+    font-size: 3.1rem;
   }
   h3 {
-    font-weight: bold;
+    font-size: 2.7rem;
   }
   h4 {
-    font-size: 3.8rem;
-  }
-  h5 {
-    font-size: 3rem;
-  }
-  h6 {
     font-size: 2.5rem;
   }
-  p {
+  h5 {
+    font-size: 2.3rem;
+  }
+  p,
+  .p-txt {
     font-size: 2.2rem;
   }
   .general {
@@ -259,25 +251,23 @@ h6 {
 /* max-width: 425rem */
 @media screen and (max-width: 26.6rem) {
   h1 {
-    font-size: 2.9rem;
-  }
-  h2 {
-    font-size: 4.2rem;
-  }
-  h3 {
-    font-weight: bold;
-  }
-  h4 {
-    font-size: 3.8rem;
-  }
-  h5 {
     font-size: 3rem;
   }
-  h6 {
+  h2 {
+    font-size: 2.8rem;
+  }
+  h3 {
     font-size: 2.5rem;
   }
-  p {
+  h4 {
+    font-size: 2.3rem;
+  }
+  h5 {
     font-size: 2.2rem;
+  }
+  p,
+  .p-txt {
+    font-size: 2rem;
   }
   .general {
     font-size: 2.5rem;
@@ -287,6 +277,15 @@ h6 {
   }
   .logo {
     width: var(--size-6xl);
+  }
+}
+@media screen and (max-width: 25rem) {
+  h1 {
+    font-size: 2.6rem;
+  }
+  p,
+  .p-txt {
+    font-size: 1.9rem;
   }
 }
 ul {
@@ -312,6 +311,7 @@ a {
     width: var(--size-6xl);
   }
 }
+
 .wrapper-logo {
   display: flex;
   align-items: center;
