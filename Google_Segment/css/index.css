@@ -46,6 +46,7 @@
   --blue-500: #335ef7;
   --purple: #6b55f8;
   --grey-medium: #475e69;
+  --blue-grey: #30444e;
 
   --white-100: #f7f8fa;
   --white-500: #ffffff;
@@ -55,15 +56,6 @@
   --fontFamily: "Roboto", sans-serif;
 
   /* miscellaneous var */
-  --bg-1-color: var(--white-500);
-  --bg-2-color: var(--primary-500);
-  --bg-3-color: var(--grey-dark);
-  --bg-4-color: var(--primary-500);
-
-  --txt-1-color: var(--primary-500);
-  --txt-2-color: var(--grey-medium);
-  --txt-3-color: var(--white-500);
-
   --borderRadius: 1rem;
   --letterSpacing: 1px;
   --transition: 0.3s ease-in-out all;
@@ -84,6 +76,33 @@
   --size-7xl: 4.5rem; /* 72px */
   --size-8xl: 6rem; /* 96px */
   --size-9xl: 8rem; /* 128px */
+}
+
+/* light dark theme */
+[data-theme="light"] {
+  /* background and text color var */
+  --bg-1-color: var(--white-500);
+  --bg-2-color: var(--primary-500);
+  --bg-3-color: var(--grey-dark);
+  --bg-4-color: var(--white-100);
+  --bg-5-color: var(--blue-100);
+
+  --txt-1-color: var(--primary-500);
+  --txt-2-color: var(--grey-medium);
+  --txt-3-color: var(--white-500);
+}
+
+[data-theme="dark"] {
+  /* background and text color var */
+  --bg-1-color: var(--primary-500);
+  --bg-2-color: var(--white-500);
+  --bg-3-color: var(--grey-dark);
+  --bg-4-color: var(--blue-grey);
+  --bg-5-color: var(--blue-grey);
+
+  --txt-1-color: var(--white-500);
+  --txt-2-color: var(--white-500);
+  --txt-3-color: var(--white-500);
 }
 
 html {
