@@ -131,6 +131,7 @@ a {
   z-index: 10;
 }
 .sticky-nav-icons {
+  display: flex;
   margin-left: 0.75rem;
 }
 .sticky-nav-options {
@@ -140,6 +141,22 @@ a {
 }
 .nav-item {
   margin-right: 1rem;
+}
+.round-nav-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #242424;
+  border-radius: 50%;
+  padding: 0.25rem 0.85rem;
+  font-size: 1.25rem;
+  height: 2rem;
+  width: fit-content;
+  opacity: 0.8;
+}
+.round-nav-item:hover {
+  opacity: 1;
+  font-size: 1.5rem;
 }
 @media screen and (max-width: 1000px) {
   .hide {
@@ -230,8 +247,6 @@ a {
 .album-icons i:hover {
   opacity: 1;
 }
-
-/* album end */
 
 .player {
   width: 50%;
