@@ -17,12 +17,12 @@ body {
 }
 .navbar-brand img {
   height: 2.5rem;
-  transition: height 0.3s ease;
   padding-left: 1.25rem;
   filter: drop-shadow(-3px 3px 2px #222);
 }
 .navbar-brand img:hover {
-  height: 2.7rem;
+  transform: scale(1.05);
+  transition: transform 0.3s ease;
 }
 .navbar-nav li {
   padding: 0 0.7rem;
