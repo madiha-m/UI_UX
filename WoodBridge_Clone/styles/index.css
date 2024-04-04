@@ -53,7 +53,12 @@ body {
   color: var(--txtColor);
 }
 
-h1, h2, h3, h4, h5, h6{
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   margin: 0;
 }
 
@@ -226,9 +231,6 @@ a.nav-link {
 
 .search-icon {
   background-color: var(--orange);
-  /* display: flex;
-  align-items: center; */
-
 }
 
 .input-group:not(.has-validation)>:not(:last-child):not(.dropdown-toggle):not(.dropdown-menu):not(.form-floating) {
@@ -355,6 +357,65 @@ a.nav-link {
     height: 53px;
   }
 }
+
+/* WHY CHOOSING US */
+.why-us-section {
+  padding-block: 90px;
+  color: var(--txt-color-primary);
+}
+
+.why-us-card-title,
+.why-us-card {
+  padding-inline: 22px;
+  margin-bottom: 25px;
+}
+
+.why-us-card-title h3 {
+  font-weight: 600;
+}
+
+.why-us-card h5 {
+  font-weight: 600;
+}
+
+.why-us-card p {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  opacity: 0.8;
+  line-height: 1.3rem;
+  padding-top: 17px;
+  margin-bottom: 0rem;
+
+}
+
+.why-us-card a {
+  font-size: 13px;
+  color: var(--orange);
+}
+
+.why-us-card a span {
+  font-size: 25px;
+  padding-left: 5px;
+
+}
+
+@media (max-width: 767px) {
+
+  .why-us-card-title,
+  .why-us-card {
+    padding-inline: 43px 70px;
+  }
+}
+
+@media (max-width: 425px) {
+
+  .why-us-card-title,
+  .why-us-card {
+    padding-inline: 43px 50px;
+  }
+}
+
 
 
 
