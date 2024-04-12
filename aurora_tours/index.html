@@ -55,6 +55,63 @@
 
     <!-- Main -->
     <main>
+        <!-- Modal -->
+        <div class="modal fade"
+             tabindex="-1"
+             id="booking-modal">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Book a tour</h5>
+                        <button type="button"
+                                class="btn-close"
+                                data-bs-dismiss="modal"
+                                aria-label=""></button>
+                    </div>
+                    <div class="modal-body">
+                        <!-- Form -->
+                        <form action="#">
+                            <!-- apply grid to make them in same row -->
+                            <div class="row g-2">
+                                <div class="col-sm-6">
+                                    <!-- input box with always floating lable , hind placeholder -->
+                                    <div class="form-floating">
+                                        <input type="email"
+                                               id="email1"
+                                               class="form-control"
+                                               placeholder="">
+                                        <label for="#email1">Email address</label>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <!-- select box -->
+                                    <div class="form-floating">
+                                        <select type="select"
+                                                id="select1"
+                                                class="form-select">
+                                            <option value="">Tromso, Norway - $899</option>
+                                            <option value="">Reykjavik, Iceland - $799</option>
+                                            <option value="">Yukon, Canada - $849</option>
+                                        </select>
+                                        <label for="#select1">Pick a tour</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button class="btn btn-secondary"
+                                data-bs-dismiss="modal">
+                            Close
+                        </button>
+                        <button class="btn btn-primary">
+                            Checkout
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
         <!-- Carousel -->
         <div id="hero-carousel"
              class="carousel slide">
@@ -82,14 +139,16 @@
                     <img src="https://images.unsplash.com/photo-1579033461380-adb47c3eb938?fit=crop&w=1964&q=100"
                          class="d-block w-100 c-img"
                          alt="...">
-                    <div class="carousel-caption d-none d-md-block top-0 mt-4">
+                    <div class="carousel-caption top-0 mt-4 ">
                         <p class="fs-3 text-uppercase mt-5">
                             Discover the hidden world
                         </p>
                         <h1 class="display-1 fw-bolder text-capitalize">
                             The Aurora Tours
                         </h1>
-                        <button class="btn btn-primary px-4 py-2 fs-5 mt-5">
+                        <button class="btn btn-primary px-4 py-2 fs-5 mt-5"
+                                data-bs-toggle="modal"
+                                data-bs-target="#booking-modal">
                             Book a tour
                         </button>
                     </div>
@@ -98,14 +157,16 @@
                     <img src="https://images.unsplash.com/photo-1516466723877-e4ec1d736c8a?fit=crop&w=2134&q=100"
                          class="d-block w-100 c-img"
                          alt="...">
-                    <div class="carousel-caption d-none d-md-block top-0 mt-4">
+                    <div class="carousel-caption top-0 mt-4">
                         <p class="fs-3 text-uppercase mt-5">
-                        The season has arrived
+                            The season has arrived
                         </p>
                         <h1 class="display-1 fw-bolder text-capitalize">
                             3 Available Tours
                         </h1>
-                        <button class="btn btn-primary px-4 py-2 fs-5 mt-5">
+                        <button class="btn btn-primary px-4 py-2 fs-5 mt-5"
+                                data-bs-toggle="modal"
+                                data-bs-target="#booking-modal">
                             Book a tour
                         </button>
                     </div>
@@ -114,14 +175,16 @@
                     <img src="https://images.unsplash.com/photo-1612686635542-2244ed9f8ddc?fit=crop&w=2070&q=100"
                          class="d-block w-100 c-img"
                          alt="...">
-                    <div class="carousel-caption d-none d-md-block top-0 mt-4">
+                    <div class="carousel-caption top-0 mt-4">
                         <p class="fs-3 text-uppercase mt-5">
-                        Destination activities
+                            Destination activities
                         </p>
                         <h1 class="display-1 fw-bolder text-capitalize">
                             Go Glacier Hiking
                         </h1>
-                        <button class="btn btn-primary px-4 py-2 fs-5 mt-5">
+                        <button class="btn btn-primary px-4 py-2 fs-5 mt-5"
+                                data-bs-toggle="modal"
+                                data-bs-target="#booking-modal">
                             Book a tour
                         </button>
                     </div>
@@ -147,7 +210,7 @@
             </button>
         </div>
 
-        
+
     </main>
 
     <!-- Footer -->
