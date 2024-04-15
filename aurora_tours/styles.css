@@ -8,3 +8,21 @@
     object-fit: cover;
     filter: brightness(0.6);
 }
+
+/* OVERVIEW */
+.overview {
+    height: 180px;
+    background-color: #d3dae1;
+}
+
+/* PACKAGES */
+.card-text {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-line-clamp: 3;
+    /* Number of lines to show */
+    max-height: 4.6rem;
+    /* Adjust based on line height and number of lines */
+}
