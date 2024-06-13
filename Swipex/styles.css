@@ -1,0 +1,67 @@
+@import url('https://fonts.cdnfonts.com/css/switzer');
+
+
+/* Custome properties/variables */
+:root {
+    /* --radio-border-color: #000000;
+    --radio-checked-color: #c78d2f;
+    --radio-hover-color: #c78d2f;
+    --radio-disabled-bg-color: #909090; */
+    --color-primary: #5355ca;
+    --color-secondary: #ff8b66;
+    --color-white: #ffffff;
+    --color-light-grey: #fafafa;
+    --color-black: #000000;
+
+    --font-family-primary: 'Switzer', sans-serif;
+    /* --font-secondary: MochiyPopPOne; */
+}
+
+
+
+
+
+/* COLORS */
+.color-primary {
+    color: var(--color-primary);
+}
+
+.color-secondary {
+    color: var(--color-secondary);
+}
+
+.color-white {
+    color: var(--color-white);
+}
+
+.color-grey-light {
+    color: var(--color-light-grey);
+}
+
+.color-black {
+    color: var(--color-black);
+}
+
+/* FONTS */
+.font-family-primary {
+    font-family: var(--font-primary);
+}
+
+/* .font-secondary {
+    font-family: var(--font-secondary);
+} */
+
+/* BASE RESET */
+* {
+    all: unset;
+    padding: 0;
+    margin: 0;
+    font-family: var(--font-family-primary);
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+    /* 100% / 16px * 10 = 1rem change of default browser font to 10px */
+    scroll-behavior: smooth;
+}
